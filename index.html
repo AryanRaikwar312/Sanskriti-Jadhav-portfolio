@@ -5,16 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Shan - Personal Portfolio and Digital Designer. Fully responsive, creative design, and easy to customize."
+      content="Explore Sanskriti Jadhav's portfolio featuring digital marketing, UI/UX design, website development, AI automation, SEO, and technology-driven business solutions."
     />
     <meta
       name="keywords"
-      content="Shan, Personal Portfolio, Digital Designer, Developer, Creative Agency, Responsive"
+      content="Sanskriti Jadhav, Digital Marketing Specialist, UI/UX Designer, AI Automation, n8n, Generative AI, SEO, AEO, GEO, Jabalpur, Portfolio, Web Development"
     />
+    <meta name="author" content="Sanskriti Jadhav" />
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Sanskriti Jadhav | Digital Marketing, UI/UX & AI Automation" />
+    <meta property="og:description" content="Designing Digital Experiences. Building Intelligent Solutions. Explore Sanskriti Jadhav's portfolio featuring digital marketing, UI/UX design, website development, and AI automation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/thumbs/about-three-thumb.png" />
+    <meta property="og:site_name" content="Sanskriti Jadhav Portfolio" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sanskriti Jadhav | Digital Marketing, UI/UX & AI Automation" />
+    <meta name="twitter:description" content="Designing Digital Experiences. Building Intelligent Solutions." />
+    <meta name="twitter:image" content="assets/images/thumbs/about-three-thumb.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sanskriti Jadhav",
+      "jobTitle": "Digital Marketing Specialist | UI/UX Designer | AI & Automation Enthusiast",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jabalpur",
+        "addressRegion": "Madhya Pradesh",
+        "addressCountry": "India"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Baderia Global Institute of Engineering and Management, Jabalpur"
+      },
+      "knowsAbout": [
+        "UI/UX Design",
+        "Generative AI",
+        "Agentic AI",
+        "n8n Workflow Automation",
+        "Web Development",
+        "SEO, AEO, GEO Optimization",
+        "Digital Marketing Strategy"
+      ]
+    }
+    </script>
+
     <!-- Title -->
-    <title>Shan - Digital Agency & Creative Portfolio</title>
+    <title>Sanskriti Jadhav | Digital Marketing, UI/UX & AI Automation</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo/favicon.png" type="image/png" />
     <!-- Bootstrap -->
@@ -40,13 +84,15 @@
       </svg>
       <div class="preloader-heading">
         <div class="load-text">
-          <span>L</span>
-          <span>o</span>
-          <span>a</span>
-          <span>d</span>
-          <span>i</span>
-          <span>n</span>
-          <span>g</span>
+          <span>S</span>
+          <span>A</span>
+          <span>N</span>
+          <span>S</span>
+          <span>K</span>
+          <span>R</span>
+          <span>I</span>
+          <span>T</span>
+          <span>I</span>
         </div>
       </div>
     </div>
@@ -54,11 +100,8 @@
 
     <!--==================== Overlay Start ====================-->
     <div class="overlay"></div>
-    <!--==================== Overlay End ====================-->
-
-    <!--==================== Sidebar Overlay End ====================-->
     <div class="side-overlay"></div>
-    <!--==================== Sidebar Overlay End ====================-->
+    <!--==================== Overlay End ====================-->
 
     <!--==================== Begin Magic Cursor Start ====================-->
     <div id="magic-cursor">
@@ -67,12 +110,12 @@
     <!--==================== Begin Magic Cursor End ====================-->
 
     <!-- Custom Toast Message start -->
-    <div id="toast-container"></div>
+    <div id="toast-container" class="position-fixed top-0 end-0 p-4" style="z-index: 999999;"></div>
     <!-- Custom Toast Message End -->
 
     <!-- ==================== Scroll to Top End Here ==================== -->
     <div class="back-to-top-wrapper">
-      <button id="back_to_top" type="button" class="back-to-top-btn">
+      <button id="back_to_top" type="button" class="back-to-top-btn" aria-label="Back to Top">
         <svg
           width="12"
           height="7"
@@ -102,12 +145,12 @@
             class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center"
           >
             <div class="twoffcanvas__logo">
-              <a class="logo-1" href="index.html"
-                ><img src="assets/images/logo/logo.png" alt="Shan Logo"
+              <a class="logo-1" href="#home"
+                ><img src="assets/images/logo/logo.png" alt="Sanskriti Jadhav Logo" style="max-height: 48px;"
               /></a>
             </div>
             <div class="tw-offcanvas-2-close d-md-none text-end">
-              <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
+              <button class="tw-offcanvas-2-close-btn" aria-label="Close Mobile Menu">
                 <span class="text">
                   <span class="text-white">close</span>
                 </span>
@@ -139,14 +182,25 @@
             </div>
           </div>
           <div class="tw-main-menu-mobile menu-hover-active counter-row">
-            <nav></nav>
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div
           class="tw-offcanvas-2-right right-box d-none d-md-block p-relative"
         >
           <div class="tw-offcanvas-2-close text-end">
-            <button class="tw-offcanvas-2-close-btn">
+            <button class="tw-offcanvas-2-close-btn" aria-label="Close Menu">
               <span class="text">
                 <span>close</span>
               </span>
@@ -182,36 +236,34 @@
             class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100"
           >
             <div class="twoffcanvas__contact-info">
+              <div class="d-flex align-items-center tw-gap-3 tw-mb-4">
+                <img src="assets/images/thumbs/footer-three-thumb.jpg" alt="Sanskriti Jadhav" class="rounded-circle object-fit-cover border border-2 border-main-two-600" style="width: 52px; height: 52px;" />
+                <div>
+                  <h6 class="text-white mb-0">Sanskriti Jadhav</h6>
+                  <span class="text-white-50 tw-text-xs">Creative Tech &bull; UI/UX &bull; AI</span>
+                </div>
+              </div>
               <div class="twoffcanvas__contact-title">
-                <h5 class="text-white">Contact us</h5>
+                <h5 class="text-white">Get in Touch</h5>
               </div>
               <ul>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-map-pin-line"></i
                   ></span>
-                  <a
-                    class="text-white"
-                    href="https://www.google.com/maps/@23.8223586,90.3661283,15z"
-                    target="_blank"
-                    >Manchester 21, Zurich, CH</a
-                  >
+                  <span class="text-white">Jabalpur, Madhya Pradesh, India</span>
+                </li>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-sparkle"></i
+                  ></span>
+                  <span class="text-white">Digital Marketing &bull; UI/UX &bull; AI Solutions</span>
                 </li>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-envelope"></i
                   ></span>
-                  <a class="text-white" href="mailto:techubinfo@mail.com"
-                    ><span class="__cf_email__">omioinfo@mail.com</span></a
-                  >
-                </li>
-                <li>
-                  <span class="text-main-two-600 tw-text-xl"
-                    ><i class="ph ph-phone-call"></i
-                  ></span>
-                  <a class="text-white" href="tel:+48555223224"
-                    >(+00) 678 345 98568</a
-                  >
+                  <a class="text-white" href="#contact">Open Contact Form</a>
                 </li>
               </ul>
             </div>
@@ -223,35 +275,22 @@
             >
               <ul class="tw-gap-2">
                 <li>
-                  <a href="#">
-                    <span
-                      class="active-media d-flex align-items-center tw-gap-1"
-                      >Facebook <i class="ph ph-arrow-bend-up-right"></i
-                    ></span>
-                    <span class="hover-media"
-                      ><i class="ph ph-facebook-logo"></i
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span
-                      class="active-media d-flex align-items-center tw-gap-1"
-                      >INSTAGRAM <i class="ph ph-arrow-bend-up-right"></i
-                    ></span>
-                    <span class="hover-media"
-                      ><i class="ph ph-instagram-logo"></i
-                    ></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span
-                      class="active-media d-flex align-items-center tw-gap-1"
+                  <a href="#contact">
+                    <span class="active-media d-flex align-items-center tw-gap-1"
                       >LINKEDIN <i class="ph ph-arrow-bend-up-right"></i
                     ></span>
                     <span class="hover-media"
                       ><i class="ph ph-linkedin-logo"></i
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact">
+                    <span class="active-media d-flex align-items-center tw-gap-1"
+                      >GITHUB <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-github-logo"></i
                     ></span>
                   </a>
                 </li>
@@ -273,195 +312,33 @@
         >
           <!-- Logo Start -->
           <div class="header-three-logo tw-rounded-md">
-            <a href="index.html" class="link">
+            <a href="#home" class="link">
               <img
                 src="assets/images/logo/logo-secendary.png"
-                alt="Shan Logo"
+                alt="Sanskriti Jadhav Logo"
                 class="max-w-200-px"
+                style="max-height: 48px; object-fit: contain;"
               />
             </a>
           </div>
           <!-- Logo End  -->
 
-          <!-- Menu Start  -->
-          <div class="header-three-social d-none d-lg-block">
-            <ul class="d-flex tw-gap-205">
-              <li>
-                <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-facebook-logo"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-x-logo"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-instagram-logo"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-dribbble-logo"></i
-                ></a>
-              </li>
-            </ul>
+          <!-- Desktop Navigation Start -->
+          <div class="main-menu d-none d-xl-block">
+            <nav class="tw-main-menu-content">
+              <ul class="d-flex align-items-center tw-gap-8 mb-0 list-unstyled">
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#home">Home</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#about">About</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#expertise">Expertise</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#projects">Projects</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#experience">Experience</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#highlights">Highlights</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#tools">Tools</a></li>
+                <li><a class="text-white hover-text-main-two-600 fw-medium tw-text-base tw-transition-3" href="#contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
-          <!-- Menu End  -->
-
-          <!-- Menu Start  -->
-          <div class="header-menu d-none">
-            <!-- Nav menu Start -->
-            <div class="main-menu">
-              <nav class="tw-main-menu-content">
-                <ul>
-                  <li class="p-static has-dropdown">
-                    <a class="color-active" href="index.html">Home</a>
-                    <!-- mega menu start -->
-                    <div class="tw-submenu submenu has-homemenu">
-                      <div
-                        class="row gx-6 row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2"
-                      >
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/home1.jpg"
-                              alt="home-one"
-                            />
-                            <div class="homemenu-btn w-100">
-                              <div class="tw-mb-2">
-                                <a
-                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
-                                  href="index.html"
-                                >
-                                  Multi Page
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="index.html">Ceative Agency</a>
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/home2.jpg"
-                              alt="home-two"
-                            />
-                            <div class="homemenu-btn w-100">
-                              <div class="tw-mb-2">
-                                <a
-                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
-                                  href="index-2.html"
-                                >
-                                  Multi Page
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="index-2.html">Digital Studio</a>
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/home3.jpg"
-                              alt="home-three"
-                            />
-                            <div class="homemenu-btn w-100">
-                              <div class="tw-mb-2">
-                                <a
-                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
-                                  href="index-3.html"
-                                >
-                                  Multi Page
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="index-3.html">Personal Portfolio</a>
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/coming-soon-img.png"
-                              alt="coming-soon"
-                            />
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="#">Coming Soon</a>
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- mega menu end -->
-                  </li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li class="has-dropdown">
-                    <a href="service.html">Services</a>
-                    <ul class="submenu tw-submenu">
-                      <li><a href="service.html">Our Service</a></li>
-                      <li>
-                        <a href="service-details.html">Service Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown">
-                    <a href="#">Pages</a>
-                    <ul class="submenu tw-submenu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Our Team</a></li>
-                      <li><a href="testimonial.html">Testimonials</a></li>
-                      <li><a href="pricing.html">Pricing</a></li>
-                      <li><a href="portfolio-one.html">Portfolio One</a></li>
-                      <li><a href="portfolio-two.html">Portfolio Two</a></li>
-                      <li>
-                        <a href="portfolio-three.html">Portfolio Theee</a>
-                      </li>
-                      <li><a href="portfolio-four.html">Portfolio Four</a></li>
-                      <li>
-                        <a href="portfolio-details.html">Portfolio Details</a>
-                      </li>
-                      <li><a href="faq.html">Our Faq</a></li>
-                      <li><a href="error.html">Error</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown">
-                    <a href="blog.html">Blog</a>
-                    <ul class="submenu tw-submenu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-list.html">Blog List</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <!-- Nav menu End  -->
-          </div>
-          <!-- Menu End  -->
+          <!-- Desktop Navigation End -->
 
           <!-- Header Right start -->
           <div class="header-right d-flex align-items-center tw-gap-705">
@@ -469,6 +346,7 @@
             <div class="header-three-menu">
               <button
                 class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md"
+                aria-label="Open Navigation"
               >
                 <span
                   ><img
@@ -484,41 +362,45 @@
             <div class="header-three-button d-none d-md-block">
               <a
                 class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
-                href="contact.html"
+                href="#contact"
               >
-                download cv
+                Let's Connect
                 <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
               </a>
             </div>
             <!-- Header Button End  -->
           </div>
-
           <!-- Header Right End  -->
         </nav>
       </div>
     </header>
     <!-- ==================== Header End Here ==================== -->
+
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <section class="banner-three-area">
+        <!-- ==================== HERO SECTION START ==================== -->
+        <section class="banner-three-area" id="home">
           <div class="container tw-container-1800-px">
             <div class="row">
               <div class="col-xl-12">
                 <div class="banner-three-wrapper position-relative z-1">
+                  <!-- Sanskriti's Portrait Placeholder Slot -->
                   <div
                     class="banner-three-man position-absolute start-50 translate-middle-x"
                   >
                     <img
                       src="assets/images/shapes/banner-three-man.png"
-                      alt="man"
+                      alt="Sanskriti Jadhav Portrait"
                     />
                   </div>
+                  <!-- Hero Backdrop Expressive Typography -->
                   <h1 class="banner-three-title text-black tw-mb-30">
-                    developer
+                    SANSKRITI
                   </h1>
                   <div
                     class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1"
                   >
+                    <!-- Left Hero Card -->
                     <div
                       class="banner-three-left tw-rounded-lg"
                       data-aos="fade-up"
@@ -526,8 +408,8 @@
                       data-aos-delay="200"
                     >
                       <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
-                        Hello! I'm Shan <br />
-                        a digital designer and creative developer.
+                        Hello! I'm Sanskriti Jadhav<br />
+                        <span class="tw-text-xl text-main-two-600 fw-medium">Digital Marketing &bull; UI/UX &bull; AI Enthusiast</span>
                       </h2>
                       <div class="banner-three-list">
                         <ul>
@@ -537,9 +419,9 @@
                             <span
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
+                                alt="plus"
                             /></span>
-                            Web Development
+                            AI & Automation
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -547,9 +429,9 @@
                             <span
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
+                                alt="plus"
                             /></span>
-                            Branding & Identity
+                            UI/UX & Digital Design
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -557,9 +439,9 @@
                             <span
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
+                                alt="plus"
                             /></span>
-                            Creative Strategy
+                            Web & Application Development
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -567,9 +449,9 @@
                             <span
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
+                                alt="plus"
                             /></span>
-                            UI/UX Design
+                            SEO & AI Search Optimization
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -577,13 +459,15 @@
                             <span
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
-                                alt="pluse"
+                                alt="plus"
                             /></span>
-                            Digital Marketing
+                            Digital Marketing Strategy
                           </li>
                         </ul>
                       </div>
                     </div>
+
+                    <!-- Center Hero Composition & CTA Buttons -->
                     <div
                       class="banner-three-center text-center"
                       data-aos="fade-up"
@@ -591,20 +475,34 @@
                       data-aos-delay="200"
                     >
                       <h3 class="banner-three-center-title tw-text-120">
-                        Design, branding and web development made better.
+                        Designing Digital Experiences. Building Intelligent Solutions.
                       </h3>
-                      <div class="banner-three-button">
+                      <p class="tw-text-xl text-white-50 tw-mb-8 max-w-700-px mx-auto">
+                        I'm a digital creative and technology enthusiast passionate about AI, automation, user experience, web development, and digital marketing. I combine creativity with technology to develop solutions that simplify processes, improve user experiences, and help businesses grow.
+                      </p>
+                      <div class="banner-three-button d-flex align-items-center justify-content-center tw-gap-4 flex-wrap">
                         <a
                           class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
-                          href="contact.html"
+                          href="#projects"
                         >
-                          view projects
+                          Explore My Work
                           <span
                             class="tw-hover-btn-circle-dot bg-main-two-600"
                           ></span>
                         </a>
+                        <a
+                          class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                          href="#contact"
+                        >
+                          Let's Connect
+                          <span
+                            class="tw-hover-btn-circle-dot bg-black"
+                          ></span>
+                        </a>
                       </div>
                     </div>
+
+                    <!-- Right Hero Highlights -->
                     <div
                       class="banner-three-right tw-rounded-lg"
                       data-aos="fade-up"
@@ -617,17 +515,12 @@
                         <h4
                           class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
                         >
-                          <span
-                            class="purecounter font-heading"
-                            data-purecounter-duration="2"
-                            data-purecounter-end="98"
-                          ></span
-                          >%
+                          <i class="ph ph-palette text-main-two-600"></i>
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                         >
-                          Client Satisfaction Rate
+                          Creative UI/UX & Design Systems
                         </p>
                       </div>
                       <div
@@ -636,77 +529,31 @@
                         <h4
                           class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1"
                         >
-                          <span
-                            class="purecounter font-heading"
-                            data-purecounter-duration="4"
-                            data-purecounter-end="70"
-                          ></span
-                          >+
+                          <i class="ph ph-cpu text-main-two-600"></i>
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-white"
                         >
-                          Projects Launched
+                          Agentic AI & Workflow Automation
                         </p>
                       </div>
                       <div
                         class="banner-three-counter-item tw-rounded-md tw-mb-4"
                       >
-                        <div class="d-flex align-items-center tw-mb-2">
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img1.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-2 tw--ms-16-px z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img2.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img3.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img4.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                        </div>
                         <h4
                           class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
                         >
-                          <span
-                            class="purecounter font-heading"
-                            data-purecounter-duration="3"
-                            data-purecounter-end="96"
-                          ></span
-                          >+
+                          <i class="ph ph-trend-up text-main-two-600"></i>
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                         >
-                          Global Clients and Growing
+                          Strategic SEO & Growth Marketing
                         </p>
                       </div>
                     </div>
+
+                    <!-- Shape Background Elements -->
                     <div
                       class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1"
                     >
@@ -724,24 +571,25 @@
             </div>
           </div>
         </section>
-        <section class="about-three-area py-120 position-relative z-1">
+        <!-- ==================== HERO SECTION END ==================== -->
+
+        <!-- ==================== ABOUT ME SECTION START ==================== -->
+        <section class="about-three-area py-120 position-relative z-1" id="about">
           <div class="container tw-container-1800-px">
             <div class="about-three-top position-relative z-1">
               <div class="row justify-content-center tw-mb-21">
-                <div class="col-xl-9">
+                <div class="col-xl-10">
                   <div class="text-center">
+                    <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">ABOUT ME</span>
                     <h2
                       class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                     >
-                      I am dedicated to bringing your vision to life by crafting
-                      unique, highly aesthetic, and impactful digital
-                      experiences. My work speaks louder than words—explore the
-                      results.
+                      Creativity Meets Technology.
                     </h2>
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-xl-6">
                   <div
                     class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg"
@@ -753,7 +601,7 @@
                       class="tw-anim-img w-100 tw-rounded-lg"
                       data-animate="true"
                       src="assets/images/thumbs/about-three-thumb.png"
-                      alt="thumb"
+                      alt="Sanskriti Jadhav - Computer Science & Engineering"
                     />
                   </div>
                 </div>
@@ -765,44 +613,51 @@
                     data-aos-delay="300"
                   >
                     <div>
-                      <p class="tw-text-xl tw-mb-10">
-                        I’m a passionate digital designer and web developer
-                        focused on creating modern, user-centered digital
-                        experiences. I blend creativity with clean, efficient
-                        code to build websites that are not only visually
-                        appealing but also functional, fast, and scalable.
+                      <p class="tw-text-xl tw-mb-8 text-neutral-100">
+                        I'm Sanskriti Jadhav, a Computer Science student passionate about digital innovation, creative problem-solving, and emerging technologies.
                       </p>
-                      <p class="tw-text-xl tw-mb-10">
-                        With a strong eye for design & a solid technical
-                        foundation, I transform complex ideas into simple
-                        intuitive digital solutions. I believe great design is
-                        purposeful-every layout, interaction, and line of code
-                        is crafted to enhance usability and deliver real value.
+                      <p class="tw-text-xl tw-mb-8 text-neutral-100">
+                        My interests span across UI/UX design, web development, Generative AI, AI agents, workflow automation, and search engine optimization.
                       </p>
-                      <p class="tw-text-xl tw-mb-10">
-                        From concept to launch, I work closely with clients to
-                        understand their goals, audience and brand vision. my
-                        collaborative approach ensures and project reflects the
-                        client’s identity while business objectives and
-                        performance standards.
+                      <p class="tw-text-xl tw-mb-8 text-neutral-100">
+                        I enjoy exploring how technology can simplify complex processes, improve digital experiences, and help businesses grow.
+                      </p>
+                      <p class="tw-text-xl tw-mb-10 text-neutral-100">
+                        From developing digital strategies to exploring AI-powered products and business automation systems, my approach focuses on innovation, usability, and meaningful impact.
                       </p>
                     </div>
+
+                    <!-- Education Card -->
+                    <div class="tw-p-705 tw-rounded-lg border border-neutral-700 bg-neutral-900 tw-mb-8">
+                      <div class="d-flex align-items-center tw-gap-4 tw-mb-3">
+                        <div class="tw-w-12 tw-h-12 rounded-circle bg-main-two-600 d-flex align-items-center justify-content-center text-white tw-text-2xl">
+                          <i class="ph ph-graduation-cap"></i>
+                        </div>
+                        <div>
+                          <span class="text-uppercase text-main-two-600 fw-bold tw-text-xs letter-spacing-1">EDUCATION</span>
+                          <h4 class="text-white tw-text-xl mb-0">Bachelor of Technology (B.Tech)</h4>
+                        </div>
+                      </div>
+                      <p class="text-white-50 tw-text-lg mb-1">Computer Science & Engineering</p>
+                      <p class="text-white-50 tw-text-base mb-0">Baderia Global Institute of Engineering and Management, Jabalpur.</p>
+                    </div>
+
                     <div class="about-three-counter d-inline-block">
                       <div class="tw-hover-btn-wrapper d-inline-block">
                         <a
                           class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
-                          href="about.html"
+                          href="#contact"
                         >
                           <span
-                            class="d-flex flex-column justify-content-center"
+                            class="d-flex flex-column justify-content-center text-center"
                           >
                             <span
-                              class="tw-btn-circle-icon text-heading tw-text-8 tw-transition-3 font-heading fw-medium"
-                              >2+</span
-                            >
+                              class="tw-btn-circle-icon text-heading tw-text-3xl tw-transition-3 font-heading fw-medium"
+                              ><i class="ph ph-handshake"></i
+                            ></span>
                             <span
-                              class="text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium"
-                              >Years of Experience</span
+                              class="text-heading fw-bold text-center tw-transition-3 tw-text-xl fw-medium"
+                              >Let's Talk</span
                             >
                           </span>
                           <i class="tw-btn-circle-dot bg-main-two-600"></i>
@@ -812,8 +667,10 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Key Pillars Cards -->
               <div
-                class="about-three-wrap-shape d-flex justify-content-between"
+                class="about-three-wrap-shape d-flex justify-content-between flex-wrap tw-gap-6 tw-mt-12"
               >
                 <div
                   class="banner-three-counter-item tw-rounded-md position-relative"
@@ -821,20 +678,15 @@
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  <h2
-                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  <h3
+                    class="banner-three-counter-title tw-text-3xl fw-semibold font-heading text-heading tw-mb-2 lh-1"
                   >
-                    <span
-                      class="purecounter font-heading"
-                      data-purecounter-duration="4"
-                      data-purecounter-end="478"
-                    ></span
-                    >/5
-                  </h2>
+                    Engineering
+                  </h3>
                   <p
                     class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                   >
-                    Client Satisfaction Rate
+                    Computer Science & Problem Solving
                   </p>
                 </div>
                 <div
@@ -843,20 +695,15 @@
                   data-aos-duration="1000"
                   data-aos-delay="300"
                 >
-                  <h2
-                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  <h3
+                    class="banner-three-counter-title tw-text-3xl fw-semibold font-heading text-heading tw-mb-2 lh-1"
                   >
-                    <span
-                      class="purecounter font-heading"
-                      data-purecounter-duration="2"
-                      data-purecounter-end="115"
-                    ></span
-                    >k+
-                  </h2>
+                    Innovation
+                  </h3>
                   <p
                     class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                   >
-                    In Client revenue growth
+                    Generative AI, Agents & Workflows
                   </p>
                 </div>
               </div>
@@ -870,6 +717,8 @@
             />
           </div>
         </section>
+        <!-- ==================== ABOUT ME SECTION END ==================== -->
+
         <!-- ======================== Marquee section start =========================== -->
         <div class="marquee tw-pt-17 bg-black">
           <div
@@ -879,49 +728,59 @@
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-white"
               >
-                Services <span class="text-white">-</span>
+                AI & Automation <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-stroke"
               >
-                Services <span class="text-white">-</span>
+                UI/UX Design <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-white"
               >
-                Services <span class="text-white">-</span>
+                Web Development <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-stroke"
               >
-                Services <span class="text-white">-</span>
+                SEO & AEO <span class="text-white">-</span>
               </h2>
             </div>
             <div>
               <h2
                 class="marquee-two-title marquee-three-title text-uppercase text-white"
               >
-                Services <span class="text-white">-</span>
+                Digital Marketing <span class="text-white">-</span>
               </h2>
             </div>
           </div>
         </div>
         <!-- ======================== Marquee section end =========================== -->
-        <section class="service-three-area bg-black pt-120 tw-pb-15">
+
+        <!-- ==================== SERVICES & EXPERTISE START ==================== -->
+        <section class="service-three-area bg-black pt-120 tw-pb-15" id="expertise">
           <div class="container tw-container-1800-px">
             <div class="row">
+              <div class="col-12 text-center tw-mb-20">
+                <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">SERVICES & EXPERTISE</span>
+                <h2 class="tw-text-15 text-white tw-char-animation">
+                  Turning Ideas Into Intelligent Digital Solutions.
+                </h2>
+              </div>
               <div class="col-12">
                 <div class="service-three-wrapper">
+
+                  <!-- 01. AI & AUTOMATION -->
                   <div
                     class="service-three-single"
                     data-aos="fade-right"
-                    data-aos-duration="2000"
+                    data-aos-duration="1500"
                     data-aos-delay="200"
                   >
                     <div
@@ -943,51 +802,38 @@
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html"
-                                >Illustration Design</a
-                              >
+                              AI & AUTOMATION
                             </h2>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
-                                >
-                              </li>
+                              <li><span class="badge-item">Generative AI</span></li>
+                              <li><span class="badge-item">Agentic AI & AI Agents</span></li>
+                              <li><span class="badge-item">n8n Workflow Automation</span></li>
+                              <li><span class="badge-item">WhatsApp Automation</span></li>
+                              <li><span class="badge-item">CRM Automation</span></li>
+                              <li><span class="badge-item">Lead Generation Automation</span></li>
+                              <li><span class="badge-item">API Integrations</span></li>
+                              <li><span class="badge-item">AI Customer Support</span></li>
+                              <li><span class="badge-item">Automated Workflows</span></li>
                             </ul>
                           </div>
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
-                          ><img
-                            src="assets/images/thumbs/service-three-thumb1.png"
-                            alt="thumb1"
-                        /></a>
+                        <img
+                          src="assets/images/thumbs/service-three-thumb1.png"
+                          alt="AI and Automation"
+                        />
                       </div>
                     </div>
                   </div>
+
+                  <!-- 02. WEB & APPLICATION DEVELOPMENT -->
                   <div
                     class="service-three-single ms-auto"
                     data-aos="fade-left"
-                    data-aos-duration="2000"
+                    data-aos-duration="1500"
                     data-aos-delay="300"
                   >
                     <div
@@ -1009,52 +855,37 @@
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html"
-                                >Business Branding</a
-                              >
+                              WEB & APPLICATION DEVELOPMENT
                             </h2>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
-                                >
-                              </li>
+                              <li><span class="badge-item">Website Development</span></li>
+                              <li><span class="badge-item">WordPress Development</span></li>
+                              <li><span class="badge-item">Web Application Development</span></li>
+                              <li><span class="badge-item">Landing Page Development</span></li>
+                              <li><span class="badge-item">Responsive Web Design</span></li>
+                              <li><span class="badge-item">Frontend Development</span></li>
+                              <li><span class="badge-item">AI-Powered Web Solutions</span></li>
                             </ul>
                           </div>
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
-                          ><img
-                            src="assets/images/thumbs/service-three-thumb2.png"
-                            alt="thumb1"
-                        /></a>
+                        <img
+                          src="assets/images/thumbs/service-three-thumb2.png"
+                          alt="Web and App Development"
+                        />
                       </div>
                     </div>
                   </div>
+
+                  <!-- 03. UI/UX & DIGITAL DESIGN -->
                   <div
                     class="service-three-single"
                     data-aos="fade-right"
-                    data-aos-duration="2000"
-                    data-aos-delay="400"
+                    data-aos-duration="1500"
+                    data-aos-delay="200"
                   >
                     <div
                       class="service-three-item d-flex justify-content-between align-items-center"
@@ -1075,50 +906,38 @@
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html">Web Development</a>
+                              UI/UX & DIGITAL DESIGN
                             </h2>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
-                                >
-                              </li>
+                              <li><span class="badge-item">UI/UX Design</span></li>
+                              <li><span class="badge-item">Figma</span></li>
+                              <li><span class="badge-item">Wireframing</span></li>
+                              <li><span class="badge-item">Prototyping</span></li>
+                              <li><span class="badge-item">Website Interface Design</span></li>
+                              <li><span class="badge-item">Application Interface Design</span></li>
+                              <li><span class="badge-item">User Experience Strategy</span></li>
+                              <li><span class="badge-item">Creative Design</span></li>
                             </ul>
                           </div>
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
-                          ><img
-                            src="assets/images/thumbs/service-three-thumb3.png"
-                            alt="thumb1"
-                        /></a>
+                        <img
+                          src="assets/images/thumbs/service-three-thumb3.png"
+                          alt="UI UX and Digital Design"
+                        />
                       </div>
                     </div>
                   </div>
+
+                  <!-- 04. SEO & AI SEARCH OPTIMIZATION -->
                   <div
                     class="service-three-single ms-auto"
                     data-aos="fade-left"
-                    data-aos-duration="2000"
-                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                    data-aos-delay="300"
                   >
                     <div
                       class="service-three-item d-flex justify-content-between align-items-center"
@@ -1139,321 +958,613 @@
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html"
-                                >Application Design</a
-                              >
+                              SEO & AI SEARCH OPTIMIZATION
                             </h2>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
-                                >
-                              </li>
+                              <li><span class="badge-item">SEO &ndash; Search Engine Optimization</span></li>
+                              <li><span class="badge-item">AEO &ndash; Answer Engine Optimization</span></li>
+                              <li><span class="badge-item">GEO &ndash; Generative Engine Optimization</span></li>
+                              <li><span class="badge-item">LLMO &ndash; LLM Optimization</span></li>
+                              <li><span class="badge-item">Local SEO</span></li>
+                              <li><span class="badge-item">Technical & On-Page SEO</span></li>
+                              <li><span class="badge-item">Google Search Console</span></li>
+                              <li><span class="badge-item">AI Search Visibility</span></li>
                             </ul>
                           </div>
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
-                          ><img
-                            src="assets/images/thumbs/service-three-thumb4.png"
-                            alt="thumb1"
-                        /></a>
+                        <img
+                          src="assets/images/thumbs/service-three-thumb4.png"
+                          alt="SEO and AI Search Optimization"
+                        />
                       </div>
                     </div>
                   </div>
+
+                  <!-- 05. DIGITAL MARKETING -->
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >05
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              DIGITAL MARKETING
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li><span class="badge-item">Digital Marketing Strategy</span></li>
+                              <li><span class="badge-item">Social Media Management</span></li>
+                              <li><span class="badge-item">Meta Ads</span></li>
+                              <li><span class="badge-item">Performance Marketing</span></li>
+                              <li><span class="badge-item">Content Marketing</span></li>
+                              <li><span class="badge-item">Lead Generation</span></li>
+                              <li><span class="badge-item">Brand Positioning</span></li>
+                              <li><span class="badge-item">Campaign Strategy</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-three-thumb5.png"
+                          alt="Digital Marketing"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 06. CREATIVE CONTENT -->
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >06
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              CREATIVE CONTENT
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li><span class="badge-item">Video Editing</span></li>
+                              <li><span class="badge-item">Social Media Creatives</span></li>
+                              <li><span class="badge-item">Visual Storytelling</span></li>
+                              <li><span class="badge-item">Content Strategy</span></li>
+                              <li><span class="badge-item">Promotional Videos</span></li>
+                              <li><span class="badge-item">Branding</span></li>
+                              <li><span class="badge-item">Creative Direction</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-three-thumb6.png"
+                          alt="Creative Content"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="portfolio-three-area py-120 position-relative z-1">
+        <!-- ==================== SERVICES & EXPERTISE END ==================== -->
+
+        <!-- ==================== SELECTED PROJECTS START ==================== -->
+        <section class="portfolio-three-area py-120 position-relative z-1" id="projects">
           <div class="portfolio-three-shape position-absolute top-0 z-n1">
-            <h3 class="portfolio-three-shape-title">works</h3>
+            <h3 class="portfolio-three-shape-title">WORKS</h3>
           </div>
           <div class="container tw-container-1800-px">
             <div class="row">
+              <div class="col-xl-12 text-center tw-mb-20">
+                <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">SELECTED PROJECTS</span>
+                <h2 class="tw-text-15 text-heading tw-char-animation">
+                  Ideas Into Digital Experiences.
+                </h2>
+                <p class="tw-text-xl text-neutral-600 max-w-800-px mx-auto tw-mt-4">
+                  From AI-powered platforms to business automation systems and digital experiences, I explore and build technology-driven solutions designed to solve real-world problems.
+                </p>
+              </div>
+
               <div class="col-xl-12">
                 <div
                   class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
                 >
+                  <!-- PROJECT 01 -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
                       <div class="tw-mb-6">
+                        <span class="status-pill completed tw-mb-3">COMPLETED CLIENT WORK</span>
                         <div>
                           <h2 class="tw-text-605 fw-medium tw-mb-4">
                             <a
-                              class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >Epic Strategy App</a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="1"
+                              >Corporate Digital Transformation & Automation</a
                             >
                           </h2>
                         </div>
                         <div class="portfolio-three-list portfolio-list">
                           <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
-                              >
-                            </li>
+                            <li><span class="text-uppercase text-heading fw-medium">Corporate Website</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">CRM</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Business Automation</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">SEO & AEO</span></li>
                           </ul>
                         </div>
                       </div>
                       <div>
                         <div class="portfolio-three-button">
-                          <a
-                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                            href="portfolio-details.html"
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="1"
+                            aria-label="View Project Details"
                             ><i class="ph ph-arrow-up-right"></i
-                          ></a>
+                          ></button>
                         </div>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="1"
                     >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb1.jpg"
-                          alt="thumb"
-                      /></a>
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb1.jpg"
+                        alt="Corporate Digital Transformation"
+                      />
                     </div>
                   </div>
+
+                  <!-- PROJECT 02 -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
                       <div class="tw-mb-6">
+                        <span class="status-pill concept tw-mb-3">SYSTEM ARCHITECTURE CONCEPT</span>
                         <div>
                           <h2 class="tw-text-605 fw-medium tw-mb-4">
                             <a
-                              class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >Branding Identity</a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="2"
+                              >Gym Management System</a
                             >
                           </h2>
                         </div>
                         <div class="portfolio-three-list portfolio-list">
                           <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
-                              >
-                            </li>
+                            <li><span class="text-uppercase text-heading fw-medium">Business Automation</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Web Application</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Fitness Tech</span></li>
                           </ul>
                         </div>
                       </div>
-                      <div class="portfolio-three-button">
-                        <a
-                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="portfolio-details.html"
-                          ><i class="ph ph-arrow-up-right"></i
-                        ></a>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="2"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="2"
                     >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb2.jpg"
-                          alt="thumb"
-                      /></a>
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb2.jpg"
+                        alt="Gym Management System"
+                      />
                     </div>
                   </div>
+
+                  <!-- PROJECT 03 -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
                       <div class="tw-mb-6">
+                        <span class="status-pill concept tw-mb-3">ACADEMIC PLATFORM CONCEPT</span>
                         <div>
                           <h2 class="tw-text-605 fw-medium tw-mb-4">
                             <a
-                              class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >PixelCraft Mobile UI</a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="3"
+                              >School Management System</a
                             >
                           </h2>
                         </div>
                         <div class="portfolio-three-list portfolio-list">
                           <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
-                              >
-                            </li>
+                            <li><span class="text-uppercase text-heading fw-medium">Education Technology</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Business Automation</span></li>
                           </ul>
                         </div>
                       </div>
-                      <div class="portfolio-three-button">
-                        <a
-                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="portfolio-details.html"
-                          ><i class="ph ph-arrow-up-right"></i
-                        ></a>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="3"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="3"
                     >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb3.jpg"
-                          alt="thumb"
-                      /></a>
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb3.jpg"
+                        alt="School Management System"
+                      />
                     </div>
                   </div>
+
+                  <!-- PROJECT 04 -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
                       <div class="tw-mb-6">
+                        <span class="status-pill completed tw-mb-3">DIGITAL WORKFLOW SOLUTION</span>
                         <div>
                           <h2 class="tw-text-605 fw-medium tw-mb-4">
                             <a
-                              class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >Creative Studio</a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="4"
+                              >Local Business Automation</a
                             >
                           </h2>
                         </div>
                         <div class="portfolio-three-list portfolio-list">
                           <ul class="d-flex tw-gap-205 flex-wrap">
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
-                              >
-                            </li>
+                            <li><span class="text-uppercase text-heading fw-medium">CRM</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Workflow Automation</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Digital Solutions</span></li>
                           </ul>
                         </div>
                       </div>
-                      <div class="portfolio-three-button">
-                        <a
-                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="portfolio-details.html"
-                          ><i class="ph ph-arrow-up-right"></i
-                        ></a>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="4"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
-                      data-cursor="View"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="4"
                     >
-                      <a
-                        class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb4.jpg"
-                          alt="thumb"
-                      /></a>
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb4.jpg"
+                        alt="Local Business Automation"
+                      />
                     </div>
                   </div>
+
+                  <!-- PROJECT 05 -->
                   <div
-                    class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0"
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
                   >
-                    <div class="tw-hover-btn-wrapper d-inline-block">
-                      <a
-                        class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
-                        href="about.html"
-                      >
-                        <span class="d-flex flex-column justify-content-center">
-                          <span
-                            class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold"
-                            >Discover <br />
-                            Our Projects <i class="ph ph-arrow-up-right"></i
-                          ></span>
-                        </span>
-                        <i class="tw-btn-circle-dot bg-main-two-600"></i>
-                      </a>
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <span class="status-pill concept tw-mb-3">AI EDTECH CONCEPT</span>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="5"
+                              >SYRAXO</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading fw-medium">AI</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">EdTech</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Product Design</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="5"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="5"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb5.jpg"
+                        alt="SYRAXO AI Platform"
+                      />
                     </div>
                   </div>
+
+                  <!-- PROJECT 06 -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <span class="status-pill concept tw-mb-3">HEALTHCARE AI CONCEPT</span>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="6"
+                              >DEVmeda</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading fw-medium">Generative AI</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Healthcare Technology</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="6"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="6"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb6.jpg"
+                        alt="DEVmeda AI"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- PROJECT 07 -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <span class="status-pill concept tw-mb-3">EMERGENCY COMM CONCEPT</span>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="7"
+                              >AERIS</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading fw-medium">Technology</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Emergency Communication</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="7"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="7"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb7.jpg"
+                        alt="AERIS Emergency Network"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- PROJECT 08 -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <span class="status-pill concept tw-mb-3">INTELLIGENT AGENT CONCEPT</span>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a
+                              class="hover-text-main-two-600 js-open-project"
+                              href="javascript:void(0)"
+                              data-project-id="8"
+                              >SANNII</a
+                            >
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading fw-medium">AI Agents</span></li>
+                            <li><span class="text-uppercase text-heading fw-medium">Intelligent Automation</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <button
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white border-0 bg-transparent js-open-project"
+                            data-project-id="8"
+                            aria-label="View Project Details"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg js-open-project cursor-pointer"
+                      data-cursor="View Details"
+                      data-project-id="8"
+                    >
+                      <img
+                        class="w-100 tw-rounded-lg"
+                        src="assets/images/thumbs/portfolio-three-thumb8.jpg"
+                        alt="SANNII AI Assistant"
+                      />
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div class="feature-three-area py-120 position-relative z-1">
+        <!-- ==================== SELECTED PROJECTS END ==================== -->
+
+        <!-- ==================== PROFESSIONAL EXPERIENCE START ==================== -->
+        <section class="feature-three-area py-120 position-relative z-1" id="experience">
           <div class="container tw-container-1800-px">
             <div class="row">
+              <div class="col-xl-12 text-center tw-mb-20">
+                <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">EXPERIENCE</span>
+                <h2 class="tw-text-15 text-white tw-char-animation">
+                  Building Experiences. Creating Impact.
+                </h2>
+              </div>
               <div class="col-xl-12">
                 <div class="feature-three-wrapper hover__widget">
+
+                  <!-- 01. FREELANCE WEB DEVELOPER & UI/UX DESIGNER -->
                   <div
                     class="feature-three-single current hover__reveal-item"
                     data-aos="fade-up"
@@ -1461,9 +1572,9 @@
                     data-aos-delay="200"
                   >
                     <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
+                      class="feature-three-item d-flex justify-content-between align-items-center flex-wrap"
                     >
-                      <div class="feature-three-left d-flex align-items-center">
+                      <div class="feature-three-left d-flex align-items-center flex-wrap">
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
@@ -1472,29 +1583,40 @@
                         </div>
                         <div>
                           <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            class="feature-three-text tw-text-605 fw-medium text-main-two-600 tw-transition-3 d-inline-block tw-w-240-px"
+                            >Freelance / Independent</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Site Of The Day - Luxe Beauty</span
+                            >Freelance Web Developer & UI/UX Designer</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2023</span
+                          class="feature-three-text tw-text-605 fw-medium text-white-50 tw-transition-3 d-inline-block"
+                          >2023 &ndash; Present</span
                         >
                       </div>
                     </div>
+                    <ul class="experience-roles-list">
+                      <li>Modern & responsive interfaces</li>
+                      <li>Business websites & landing pages</li>
+                      <li>WordPress customization</li>
+                      <li>UI/UX design & prototyping</li>
+                      <li>Performance optimization</li>
+                      <li>Digital graphics & visual assets</li>
+                      <li>AI-assisted & vibe-coded development</li>
+                    </ul>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/feature-three-thumb1.jpg"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb1.jpg"
                     ></div>
                   </div>
+
+                  <!-- 02. FREELANCE CONTENT & GROWTH STRATEGIST -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1502,9 +1624,9 @@
                     data-aos-delay="200"
                   >
                     <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
+                      class="feature-three-item d-flex justify-content-between align-items-center flex-wrap"
                     >
-                      <div class="feature-three-left d-flex align-items-center">
+                      <div class="feature-three-left d-flex align-items-center flex-wrap">
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
@@ -1513,29 +1635,40 @@
                         </div>
                         <div>
                           <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >FWA</span
+                            class="feature-three-text tw-text-605 fw-medium text-main-two-600 tw-transition-3 d-inline-block tw-w-240-px"
+                            >Personal Brand Projects</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Freelance Content & Growth Strategist</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2022</span
+                          class="feature-three-text tw-text-605 fw-medium text-white-50 tw-transition-3 d-inline-block"
+                          >2023 &ndash; Present</span
                         >
                       </div>
                     </div>
+                    <ul class="experience-roles-list">
+                      <li>Content planning & strategy</li>
+                      <li>Personal brand positioning</li>
+                      <li>Digital growth strategies</li>
+                      <li>Creative campaign planning</li>
+                      <li>Social media content development</li>
+                      <li>Audience engagement</li>
+                      <li>Content research & performance evaluation</li>
+                    </ul>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb1.jpg"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb2.jpg"
                     ></div>
                   </div>
+
+                  <!-- 03. SOCIAL MEDIA & DIGITAL MARKETING -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1543,9 +1676,9 @@
                     data-aos-delay="200"
                   >
                     <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
+                      class="feature-three-item d-flex justify-content-between align-items-center flex-wrap"
                     >
-                      <div class="feature-three-left d-flex align-items-center">
+                      <div class="feature-three-left d-flex align-items-center flex-wrap">
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
@@ -1554,29 +1687,39 @@
                         </div>
                         <div>
                           <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CSSDA</span
+                            class="feature-three-text tw-text-605 fw-medium text-main-two-600 tw-transition-3 d-inline-block tw-w-240-px"
+                            >Independent Projects</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Social Media & Digital Marketing</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2021</span
+                          class="feature-three-text tw-text-605 fw-medium text-white-50 tw-transition-3 d-inline-block"
+                          >2022 &ndash; Present</span
                         >
                       </div>
                     </div>
+                    <ul class="experience-roles-list">
+                      <li>Social media management</li>
+                      <li>Digital marketing campaigns</li>
+                      <li>Content creation & publishing</li>
+                      <li>Brand awareness initiatives</li>
+                      <li>Creative design & video editing</li>
+                      <li>Marketing research & optimization</li>
+                    </ul>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb2.jpg"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb3.jpg"
                     ></div>
                   </div>
+
+                  <!-- 04. CONTENT CREATOR & STRATEGIST -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1584,9 +1727,9 @@
                     data-aos-delay="200"
                   >
                     <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
+                      class="feature-three-item d-flex justify-content-between align-items-center flex-wrap"
                     >
-                      <div class="feature-three-left d-flex align-items-center">
+                      <div class="feature-three-left d-flex align-items-center flex-wrap">
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
@@ -1595,29 +1738,39 @@
                         </div>
                         <div>
                           <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CSSDA</span
+                            class="feature-three-text tw-text-605 fw-medium text-main-two-600 tw-transition-3 d-inline-block tw-w-240-px"
+                            >Cypher / P2P Foundation</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Content Creator & Strategist</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2020</span
+                          class="feature-three-text tw-text-605 fw-medium text-white-50 tw-transition-3 d-inline-block"
+                          >2024 &ndash; Present</span
                         >
                       </div>
                     </div>
+                    <ul class="experience-roles-list">
+                      <li>Educational content development</li>
+                      <li>Content strategy & research</li>
+                      <li>Creative campaign development</li>
+                      <li>Visual communication & scripts</li>
+                      <li>Social media video & creatives</li>
+                      <li>Tech-focused educational initiatives</li>
+                    </ul>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb3.jpg"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb4.jpg"
                     ></div>
                   </div>
+
+                  <!-- 05. UI/UX DESIGN INTERN -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1625,9 +1778,9 @@
                     data-aos-delay="200"
                   >
                     <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
+                      class="feature-three-item d-flex justify-content-between align-items-center flex-wrap"
                     >
-                      <div class="feature-three-left d-flex align-items-center">
+                      <div class="feature-three-left d-flex align-items-center flex-wrap">
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
@@ -1636,247 +1789,220 @@
                         </div>
                         <div>
                           <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            class="feature-three-text tw-text-605 fw-medium text-main-two-600 tw-transition-3 d-inline-block tw-w-240-px"
+                            >Emote (Remote)</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >UI/UX Design Intern</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2019</span
+                          class="feature-three-text tw-text-605 fw-medium text-white-50 tw-transition-3 d-inline-block"
+                          >Internship</span
                         >
                       </div>
                     </div>
-                    <div
-                      class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb4.jpg"
-                    ></div>
-                  </div>
-                  <div
-                    class="feature-three-single hover__reveal-item"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="feature-three-left d-flex align-items-center">
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
-                            >06</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2018</span
-                        >
-                      </div>
-                    </div>
+                    <ul class="experience-roles-list">
+                      <li>UI design & UX research</li>
+                      <li>Design thinking & user journeys</li>
+                      <li>Wireframing & interactive prototyping</li>
+                      <li>Responsive interface design</li>
+                      <li>Design collaboration & consistency</li>
+                      <li>Usability improvements</li>
+                    </ul>
                     <div
                       class="hover__reveal-bg bg-img"
                       data-background-image="assets/images/thumbs/portfolio-thumb1.jpg"
                     ></div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <section class="testimonial-three-area pt-120 tw-pb-22">
+        </section>
+        <!-- ==================== PROFESSIONAL EXPERIENCE END ==================== -->
+
+        <!-- ==================== PROFESSIONAL HIGHLIGHTS START ==================== -->
+        <section class="py-120 position-relative z-1 bg-black" id="highlights">
           <div class="container tw-container-1800-px">
-            <div class="row justify-content-center tw-mb-21">
-              <div class="col-xl-10">
-                <div class="text-center">
-                  <h2
-                    class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
-                  >
-                    Honest testimonials from clients highlighting my commitment
-                    to quality, performance, & user-focused design that delivers
-                    real results
-                  </h2>
+            <div class="row">
+              <div class="col-12 text-center tw-mb-20">
+                <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">PROFESSIONAL HIGHLIGHTS</span>
+                <h2 class="tw-text-15 text-white tw-char-animation">
+                  Driven By Curiosity. Focused On Impact.
+                </h2>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="highlight-card">
+                  <div class="highlight-icon"><i class="ph ph-code"></i></div>
+                  <h3 class="tw-text-2xl text-white tw-mb-3">Freelance Web Development</h3>
+                  <p class="text-neutral-400 tw-text-base mb-0">Hands-on experience engineering clean, responsive websites, landing pages, and customized solutions focused on performance and seamless usability.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="highlight-card">
+                  <div class="highlight-icon"><i class="ph ph-figma-logo"></i></div>
+                  <h3 class="tw-text-2xl text-white tw-mb-3">UI/UX & Product Design</h3>
+                  <p class="text-neutral-400 tw-text-base mb-0">Designing intuitive wireframes, interactive prototypes, and design systems in Figma that transform complex interactions into frictionless user journeys.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="highlight-card">
+                  <div class="highlight-icon"><i class="ph ph-megaphone"></i></div>
+                  <h3 class="tw-text-2xl text-white tw-mb-3">Digital Marketing & Strategy</h3>
+                  <p class="text-neutral-400 tw-text-base mb-0">Executing performance marketing, audience acquisition funnels, Meta Ads, and content strategies that amplify brand visibility and drive qualified leads.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="highlight-card">
+                  <div class="highlight-icon"><i class="ph ph-robot"></i></div>
+                  <h3 class="tw-text-2xl text-white tw-mb-3">AI Agents & Workflow Automation</h3>
+                  <p class="text-neutral-400 tw-text-base mb-0">Building autonomous n8n workflows, WhatsApp business connectors, and AI agent frameworks that eliminate manual bottlenecks and scale productivity.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="highlight-card">
+                  <div class="highlight-icon"><i class="ph ph-database"></i></div>
+                  <h3 class="tw-text-2xl text-white tw-mb-3">Business Website & CRM Solutions</h3>
+                  <p class="text-neutral-400 tw-text-base mb-0">Implementing centralized customer relationship management (CRM) workflows integrated directly with websites to automate inquiry and lead handling.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="highlight-card">
+                  <div class="highlight-icon"><i class="ph ph-magnifying-glass"></i></div>
+                  <h3 class="tw-text-2xl text-white tw-mb-3">SEO, AEO, GEO & AI Search</h3>
+                  <p class="text-neutral-400 tw-text-base mb-0">Pioneering search optimization across Google Search Console as well as generative engine and AI assistant answer discovery (AEO/GEO/LLMO).</p>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <!-- ==================== PROFESSIONAL HIGHLIGHTS END ==================== -->
+
+        <!-- ==================== TECHNOLOGY & TOOLS START ==================== -->
+        <section class="brand-three-area brand-two-area pb-120 pt-80" id="tools">
+          <div class="container tw-container-1800-px">
             <div class="row">
-              <div class="col-xl-12">
-                <div class="testimonial-three-slider position-relative z-1">
-                  <div class="testimonial-three-active swiper-container">
-                    <div class="swiper-wrapper">
-                      <!-- item 1 -->
-                      <div
-                        class="testimonial-three-wrapper d-flex align-items-center tw-gap-9 tw-rounded-lg tw-mb-705 swiper-slide"
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                        data-aos-delay="200"
-                      >
-                        <div
-                          class="testimonial-three-thumb position-relative z-1"
-                        >
-                          <img
-                            class="w-100 h-100 tw-rounded-lg"
-                            src="assets/images/thumbs/testimonial-three-thumb1.jpg"
-                            alt="thumb"
-                          />
-                          <div
-                            class="testimonial-three-button position-absolute start-50 top-50 translate-middle"
-                          >
-                            <a
-                              class="open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle"
-                              href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
-                              data-fancybox="gallery"
-                              data-caption=""
-                            >
-                              <i class="ph-bold ph-play"></i>
-                              <span class="ripple"></span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="testimonial-three-content w-100">
-                          <div
-                            class="d-flex align-items-center justify-content-between tw-mb-16"
-                          >
-                            <div>
-                              <span
-                                ><img
-                                  src="assets/images/icons/testimonial-three-icon.svg"
-                                  alt="icon"
-                              /></span>
-                            </div>
-                            <div class="testimonial-three-review">
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                            </div>
-                          </div>
-                          <div class="tw-mb-15">
-                            <p
-                              class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
-                            >
-                              Nemo enim ipsam voluptatem quia voluptas sit
-                              aspernatur aut odit aut fugit sed quia
-                              consequuntur magni dolores eos qui ratione
-                              voluptatem sequi nesciunt.
-                            </p>
-                          </div>
-                          <div>
-                            <h2 class="tw-text-2xl fw-medium">
-                              Sophia Reynolds
-                            </h2>
-                            <p class="tw-text-lg">Founder, Startup Studio</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item 2 -->
-                      <div
-                        class="testimonial-three-wrapper d-flex align-items-center tw-gap-9 tw-rounded-lg tw-mb-705 swiper-slide"
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                        data-aos-delay="300"
-                      >
-                        <div
-                          class="testimonial-three-thumb position-relative z-1"
-                        >
-                          <img
-                            class="w-100 h-100 tw-rounded-lg"
-                            src="assets/images/thumbs/testimonial-three-thumb2.jpg"
-                            alt="thumb"
-                          />
-                          <div
-                            class="testimonial-three-button position-absolute start-50 top-50 translate-middle"
-                          >
-                            <a
-                              class="open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle"
-                              href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
-                              data-fancybox="gallery"
-                              data-caption=""
-                            >
-                              <i class="ph-bold ph-play"></i>
-                              <span class="ripple"></span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="testimonial-three-content w-100">
-                          <div
-                            class="d-flex align-items-center justify-content-between tw-mb-16"
-                          >
-                            <div>
-                              <span
-                                ><img
-                                  src="assets/images/icons/testimonial-three-icon.svg"
-                                  alt="icon"
-                              /></span>
-                            </div>
-                            <div class="testimonial-three-review">
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                            </div>
-                          </div>
-                          <div class="tw-mb-15">
-                            <p
-                              class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
-                            >
-                              Nemo enim ipsam voluptatem quia voluptas sit
-                              aspernatur aut odit aut fugit sed quia
-                              consequuntur magni dolores eos qui ratione
-                              voluptatem sequi nesciunt.
-                            </p>
-                          </div>
-                          <div>
-                            <h2 class="tw-text-2xl fw-medium">
-                              Daniel Roberts
-                            </h2>
-                            <p class="tw-text-lg">CEO, Tech Company</p>
-                          </div>
-                        </div>
-                      </div>
+              <div class="col-xl-12 text-center tw-mb-20">
+                <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">TECH STACK</span>
+                <h2 class="brand-three-title tw-text-15 tw-char-animation text-heading">
+                  Tools That Power My Creativity.
+                </h2>
+              </div>
+            </div>
+            
+            <div class="row g-4">
+              <!-- AI & AUTOMATION -->
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="tool-category-box">
+                  <div class="d-flex align-items-center tw-gap-3 tw-mb-5">
+                    <div class="tw-w-10 tw-h-10 rounded-circle bg-main-two-600 d-flex align-items-center justify-content-center text-white tw-text-xl">
+                      <i class="ph ph-cpu"></i>
+                    </div>
+                    <h3 class="text-white tw-text-xl mb-0">AI & AUTOMATION</h3>
+                  </div>
+                  <div class="d-flex flex-wrap tw-gap-2">
+                    <span class="tool-tag"><i class="ph ph-git-merge"></i> n8n</span>
+                    <span class="tool-tag"><i class="ph ph-chat-circle-dots"></i> ChatGPT</span>
+                    <span class="tool-tag"><i class="ph ph-sparkle"></i> Claude</span>
+                    <span class="tool-tag"><i class="ph ph-stars"></i> Gemini</span>
+                    <span class="tool-tag"><i class="ph ph-robot"></i> AI Agents</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DESIGN & DEVELOPMENT -->
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="tool-category-box">
+                  <div class="d-flex align-items-center tw-gap-3 tw-mb-5">
+                    <div class="tw-w-10 tw-h-10 rounded-circle bg-main-two-600 d-flex align-items-center justify-content-center text-white tw-text-xl">
+                      <i class="ph ph-code"></i>
+                    </div>
+                    <h3 class="text-white tw-text-xl mb-0">DESIGN & DEV</h3>
+                  </div>
+                  <div class="d-flex flex-wrap tw-gap-2">
+                    <span class="tool-tag"><i class="ph ph-figma-logo"></i> Figma</span>
+                    <span class="tool-tag"><i class="ph ph-paint-brush"></i> Canva</span>
+                    <span class="tool-tag"><i class="ph ph-browsers"></i> WordPress</span>
+                    <span class="tool-tag"><i class="ph ph-file-html"></i> HTML5</span>
+                    <span class="tool-tag"><i class="ph ph-file-css"></i> CSS3</span>
+                    <span class="tool-tag"><i class="ph ph-file-js"></i> JavaScript</span>
+                    <span class="tool-tag"><i class="ph ph-atom"></i> React</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MARKETING & SEO -->
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="tool-category-box">
+                  <div class="d-flex align-items-center tw-gap-3 tw-mb-5">
+                    <div class="tw-w-10 tw-h-10 rounded-circle bg-main-two-600 d-flex align-items-center justify-content-center text-white tw-text-xl">
+                      <i class="ph ph-chart-line-up"></i>
+                    </div>
+                    <h3 class="text-white tw-text-xl mb-0">MARKETING & SEO</h3>
+                  </div>
+                  <div class="d-flex flex-wrap tw-gap-2">
+                    <span class="tool-tag"><i class="ph ph-magnifying-glass"></i> Google Search Console</span>
+                    <span class="tool-tag"><i class="ph ph-chart-polar"></i> Google Analytics</span>
+                    <span class="tool-tag"><i class="ph ph-meta-logo"></i> Meta Business Suite</span>
+                    <span class="tool-tag"><i class="ph ph-trend-up"></i> SEO Tools</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PRODUCTIVITY -->
+              <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="tool-category-box">
+                  <div class="d-flex align-items-center tw-gap-3 tw-mb-5">
+                    <div class="tw-w-10 tw-h-10 rounded-circle bg-main-two-600 d-flex align-items-center justify-content-center text-white tw-text-xl">
+                      <i class="ph ph-check-square-offset"></i>
+                    </div>
+                    <h3 class="text-white tw-text-xl mb-0">PRODUCTIVITY</h3>
+                  </div>
+                  <div class="d-flex flex-wrap tw-gap-2">
+                    <span class="tool-tag"><i class="ph ph-notebook"></i> Notion</span>
+                    <span class="tool-tag"><i class="ph ph-kanban"></i> Trello</span>
+                    <span class="tool-tag"><i class="ph ph-google-logo"></i> Google Workspace</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ==================== TECHNOLOGY & TOOLS END ==================== -->
+
+        <!-- ==================== PHILOSOPHY STATEMENT (TESTIMONIAL REPLACEMENT) START ==================== -->
+        <section class="testimonial-three-area pt-100 tw-pb-22 bg-neutral-950">
+          <div class="container tw-container-1800-px">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="text-center tw-p-12 tw-rounded-xl border border-neutral-800 bg-neutral-900 shadow-lg" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="tw-mb-6">
+                    <span class="tw-w-16 tw-h-16 rounded-circle bg-main-two-600 d-inline-flex align-items-center justify-content-center text-white tw-text-3xl">
+                      <i class="ph ph-quotes"></i>
+                    </span>
+                  </div>
+                  <h2
+                    class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim tw-mb-6"
+                  >
+                    Built With Purpose. Designed Around People.
+                  </h2>
+                  <p class="tw-text-2xl text-neutral-300 max-w-800-px mx-auto fw-medium lh-base">
+                    "I believe technology reaches its highest value when it seamlessly serves human needs. From intuitive interface design to intelligent autonomous workflows, every system I build is rooted in clarity, elegance, and measurable real-world impact."
+                  </p>
+                  <div class="tw-mt-8 d-flex align-items-center justify-content-center tw-gap-4">
+                    <img src="assets/images/thumbs/testimonial-three-thumb1.jpg" alt="Sanskriti Jadhav" class="rounded-circle object-fit-cover border border-2 border-main-two-600" style="width: 68px; height: 68px;" />
+                    <div class="text-start">
+                      <h4 class="text-white tw-text-xl fw-bold mb-1">Sanskriti Jadhav</h4>
+                      <p class="text-main-two-600 tw-text-base mb-0">Digital Marketing Specialist &bull; UI/UX Designer &bull; AI Enthusiast</p>
                     </div>
                   </div>
                 </div>
@@ -1884,182 +2010,12 @@
             </div>
           </div>
         </section>
-        <section class="brand-three-area brand-two-area pb-120 @@brandipClass">
-          <div class="container tw-container-1800-px">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="text-center tw-mb-15">
-                  <h2 class="brand-three-title tw-text-xl tw-char-animation">
-                    Loved by Teams Around the World
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="row gx-2">
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb1.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb11.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="300"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb2.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb22.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="400"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb55.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb5.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb4.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb44.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-            </div>
-            <div class="row gx-2">
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb33.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb3.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="300"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb11.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb1.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="400"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb66.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb6.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb22.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb2.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- ==================== PHILOSOPHY STATEMENT END ==================== -->
 
+        <!-- ==================== FOOTER & CONTACT START ==================== -->
         <section
           class="footer-three-area pt-120 tw-pb-10 position-relative z-1"
+          id="contact"
         >
           <div class="container tw-container-1800-px">
             <div class="row justify-content-between pb-120">
@@ -2071,33 +2027,32 @@
                   data-aos-delay="200"
                 >
                   <div class="tw-mb-9">
+                    <span class="text-uppercase text-main-two-600 fw-bold tw-text-lg tw-mb-4 d-inline-block letter-spacing-2">LET'S CONNECT</span>
                     <h2 class="tw-text-15 text-white tw-char-animation">
-                      Let’s create something meaningful
+                      Let's create something meaningful.
                     </h2>
                   </div>
-                  <div
-                    class="d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap"
-                  >
-                    <a
-                      class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                      href="mailto:shan@gmail.com"
-                      >shan@gmail.com</a
-                    >
-                    <span class="tw-text-2xl fw-medium text-main-600">//</span>
-                    <a
-                      class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                      href="tel:+442039991245"
-                      >+44 20 3999 1245</a
-                    >
+                  <p class="tw-text-xl text-neutral-300 tw-mb-8">
+                    Have an idea, a business challenge, or a digital project in mind? I'm always interested in exploring creative collaborations, technology-driven solutions, and opportunities to build something meaningful. Let's connect and turn your ideas into reality.
+                  </p>
+                  
+                  <div class="d-flex flex-column tw-gap-3 tw-mb-10">
+                    <div class="d-flex align-items-center tw-gap-4">
+                      <span class="tw-w-10 tw-h-10 rounded-circle bg-neutral-800 d-flex align-items-center justify-content-center text-main-two-600 tw-text-xl">
+                        <i class="ph ph-map-pin"></i>
+                      </span>
+                      <span class="tw-text-xl text-white">Jabalpur, Madhya Pradesh, India</span>
+                    </div>
                   </div>
+
                   <div
-                    class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6"
+                    class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6 align-items-center"
                   >
-                    <div class="footer-three-top-thumb tw-w-160-px">
+                    <div class="footer-three-top-thumb tw-w-120-px">
                       <img
                         class="tw-rounded-lg w-100"
                         src="assets/images/thumbs/footer-three-thumb.jpg"
-                        alt="thumb"
+                        alt="Sanskriti Jadhav"
                       />
                     </div>
                     <div
@@ -2105,31 +2060,26 @@
                     >
                       <div>
                         <h3 class="tw-text-xl text-white tw-mb-2">
-                          Shan
+                          Sanskriti Jadhav
                         </h3>
-                        <p class="text-white">Digital Designer & Developer</p>
+                        <p class="text-white-50 tw-text-sm mb-3">Digital Experiences &bull; AI Solutions</p>
                       </div>
                       <div class="footer-three-social">
-                        <ul class="d-flex align-items-center tw-gap-1">
+                        <ul class="d-flex align-items-center tw-gap-2 list-unstyled mb-0">
                           <li>
                             <a
-                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-facebook-logo"></i
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-two-600 hover-text-white bg-white tw-transition-3"
+                              href="#contact"
+                              aria-label="LinkedIn"
+                              ><i class="ph ph-linkedin-logo"></i
                             ></a>
                           </li>
                           <li>
                             <a
-                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-x-logo"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-instagram-logo"></i
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-two-600 hover-text-white bg-white tw-transition-3"
+                              href="#contact"
+                              aria-label="GitHub"
+                              ><i class="ph ph-github-logo"></i
                             ></a>
                           </li>
                         </ul>
@@ -2145,42 +2095,72 @@
                   data-aos-duration="1000"
                   data-aos-delay="300"
                 >
-                  <form action="#">
+                  <form id="contactForm" novalidate>
                     <div class="row">
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
                           <input
                             type="text"
-                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
-                            placeholder="First Name"
+                            id="formName"
+                            name="name"
+                            required
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-7 tw-placeholder-text-neutral-100 focus-border-main-two-600 tw-h-18"
+                            placeholder="Full Name *"
                           />
+                          <div class="invalid-feedback text-danger tw-ps-2 tw-pt-1">Please provide your full name.</div>
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
                           <input
                             type="email"
-                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
-                            placeholder="Email Address"
+                            id="formEmail"
+                            name="email"
+                            required
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-7 tw-placeholder-text-neutral-100 focus-border-main-two-600 tw-h-18"
+                            placeholder="Email Address *"
                           />
+                          <div class="invalid-feedback text-danger tw-ps-2 tw-pt-1">Please enter a valid email address.</div>
+                        </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <div class="position-relative tw-mb-7">
+                          <input
+                            type="text"
+                            id="formSubject"
+                            name="subject"
+                            required
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-7 tw-placeholder-text-neutral-100 focus-border-main-two-600 tw-h-18"
+                            placeholder="Subject *"
+                          />
+                          <div class="invalid-feedback text-danger tw-ps-2 tw-pt-1">Please enter a subject.</div>
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
                           <textarea
-                            class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
-                            placeholder="Message"
+                            id="formMessage"
+                            name="message"
+                            required
+                            rows="5"
+                            class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-7 tw-placeholder-text-neutral-100 focus-border-main-two-600"
+                            placeholder="Message *"
                           ></textarea>
+                          <div class="invalid-feedback text-danger tw-ps-2 tw-pt-1">Please enter your message.</div>
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="contact-button">
                           <button
-                            class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg"
+                            type="submit"
+                            id="submitBtn"
+                            class="tw-hover-btn bg-main-two-600 text-white tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center align-items-center tw-gap-3 w-100 hover-text-white hover-bg-white tw-transition-3 tw-rounded-lg border-0"
                           >
-                            submit message
+                            <span class="btn-text">Submit Message</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
                           </button>
                         </div>
+                        <div id="formAlert" class="tw-mt-4 d-none"></div>
                       </div>
                     </div>
                   </form>
@@ -2188,12 +2168,13 @@
               </div>
             </div>
           </div>
+
           <div class="footer-three-border tw-px-18 tw-mb-10">
             <div class="container-fluid gx-0">
               <div class="row">
                 <div class="col-xl-12">
                   <div
-                    class="footer-three-middile d-flex align-items-center justify-content-between"
+                    class="footer-three-middile d-flex align-items-center justify-content-between flex-wrap tw-gap-6"
                   >
                     <div
                       data-aos="fade-up"
@@ -2203,32 +2184,18 @@
                       <h4 class="tw-text-2xl text-white tw-mb-2">
                         Quick Links
                       </h4>
-                      <ul class="d-flex tw-gap-2 flex-wrap">
-                        <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >Home,</a
-                          >
-                        </li>
-                        <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >About Me,
-                          </a>
-                        </li>
-                        <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >Portfolio,
-                          </a>
-                        </li>
-                        <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >Service,
-                          </a>
-                        </li>
-                        <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >Contact
-                          </a>
-                        </li>
+                      <ul class="d-flex tw-gap-3 flex-wrap list-unstyled mb-0">
+                        <li><a class="tw-text-lg text-white hover-text-main-two-600" href="#home">Home</a></li>
+                        <li><span class="text-white-50">&bull;</span></li>
+                        <li><a class="tw-text-lg text-white hover-text-main-two-600" href="#about">About</a></li>
+                        <li><span class="text-white-50">&bull;</span></li>
+                        <li><a class="tw-text-lg text-white hover-text-main-two-600" href="#expertise">Expertise</a></li>
+                        <li><span class="text-white-50">&bull;</span></li>
+                        <li><a class="tw-text-lg text-white hover-text-main-two-600" href="#projects">Projects</a></li>
+                        <li><span class="text-white-50">&bull;</span></li>
+                        <li><a class="tw-text-lg text-white hover-text-main-two-600" href="#experience">Experience</a></li>
+                        <li><span class="text-white-50">&bull;</span></li>
+                        <li><a class="tw-text-lg text-white hover-text-main-two-600" href="#contact">Contact</a></li>
                       </ul>
                     </div>
                     <div
@@ -2238,7 +2205,8 @@
                     >
                       <a
                         class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle"
-                        href="#"
+                        href="#home"
+                        aria-label="Back to Top"
                         ><i class="ph ph-arrow-up"></i
                       ></a>
                     </div>
@@ -2249,10 +2217,10 @@
                       data-aos-delay="400"
                     >
                       <h4 class="tw-text-2xl text-white tw-mb-2">
-                        Shan Portfolio
+                        Sanskriti Jadhav
                       </h4>
-                      <p class="tw-text-lg text-white">
-                        © 2025 Shan. All rights reserved
+                      <p class="tw-text-lg text-white-50 mb-0">
+                        &copy; 2026 Sanskriti Jadhav. All rights reserved.
                       </p>
                     </div>
                   </div>
@@ -2266,7 +2234,7 @@
                 <div class="col-xl-12">
                   <div class="footer-three-bottom text-center">
                     <h5 class="footer-three-bottom-title text-white text-center">
-                      Shan
+                      SANSKRITI
                     </h5>
                   </div>
                 </div>
@@ -2281,8 +2249,18 @@
             />
           </div>
         </section>
+        <!-- ==================== FOOTER & CONTACT END ==================== -->
       </div>
     </div>
+
+    <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+    <div id="projectModal" class="sj-modal-backdrop" aria-hidden="true" role="dialog">
+      <div class="sj-modal-dialog">
+        <button class="sj-modal-close" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
     <!-- Jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <!-- phosphor Js -->
@@ -2321,5 +2299,345 @@
     <script src="assets/js/main.js"></script>
     <!-- cursor js -->
     <script src="assets/js/tw-cursor.js"></script>
+
+    <!-- Project Data & Form Controller JS -->
+    <script>
+      (function($) {
+        "use strict";
+
+        // 8 Projects Comprehensive Data Store
+        const projectsData = {
+          1: {
+            title: "Corporate Digital Transformation & Automation",
+            category: "Corporate Website | CRM | Business Automation | SEO",
+            status: "Completed Client Collaboration",
+            statusClass: "completed",
+            tagline: "Transforming Traditional Business Operations Into Connected Digital Systems.",
+            description: "Worked with an international import and export trading company to strengthen its digital presence and streamline business operations through technology-driven solutions. The project involved developing a professional corporate website, implementing a centralized CRM system, and integrating automated workflows to simplify customer inquiries, lead management, and internal business processes.",
+            sections: [
+              {
+                title: "Corporate Website",
+                items: [
+                  "Professional corporate website development",
+                  "Responsive user interface across devices",
+                  "Business services and product catalog presentation",
+                  "Inquiry and lead-generation dynamic forms",
+                  "Search-engine-friendly website architecture"
+                ]
+              },
+              {
+                title: "CRM Implementation",
+                items: [
+                  "Centralized customer relationship database",
+                  "Lead tracking and pipeline management",
+                  "Customer inquiry organization and prioritization",
+                  "Systematic follow-up tracking",
+                  "Integrated business communication management"
+                ]
+              },
+              {
+                title: "Business Automation",
+                items: [
+                  "Automated inquiry collection pipelines",
+                  "Lead assignment and routing workflows",
+                  "Instant email confirmation notifications",
+                  "WhatsApp communication workflows",
+                  "Real-time CRM and website integrations",
+                  "Automated administrative reporting"
+                ]
+              },
+              {
+                title: "SEO & AI Search Optimization",
+                items: [
+                  "Google Search ranking optimizations",
+                  "Technical SEO architecture and schema markup",
+                  "On-page content and keyword optimization",
+                  "Google Search Console integration & tracking",
+                  "Answer Engine Optimization (AEO)",
+                  "Generative Engine Optimization (GEO)",
+                  "AI search visibility and answer synthesis"
+                ]
+              }
+            ]
+          },
+          2: {
+            title: "Gym Management System",
+            category: "Business Automation | Web Application | Fitness Technology",
+            status: "System Architecture & Workflow Concept",
+            statusClass: "concept",
+            tagline: "Centralized fitness business operations with automated administrative workflows.",
+            description: "A centralized gym management solution designed to simplify fitness business operations, improve member management, and automate administrative activities.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "Member registration and profile management",
+                  "Membership plans and renewal tracking",
+                  "Digital attendance check-in management",
+                  "Fee, invoicing, and payment record tracking",
+                  "Automated payment renewal reminders",
+                  "WhatsApp notifications and alerts",
+                  "Administrative command dashboard",
+                  "Seamless gym website integration"
+                ]
+              }
+            ]
+          },
+          3: {
+            title: "School Management System",
+            category: "Education Technology | Business Automation",
+            status: "Academic Platform Concept",
+            statusClass: "concept",
+            tagline: "Streamlining academic administration and parent-teacher-student communication.",
+            description: "A digital school management solution designed to streamline academic administration and simplify communication between schools, teachers, students, and parents.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "Student admission workflow and digital records",
+                  "Automated attendance management and reporting",
+                  "Tuition fee scheduling and collection tracking",
+                  "Unified parent communication channel",
+                  "Automated circular and event notifications",
+                  "Teacher and academic staff management",
+                  "Role-based academic dashboards",
+                  "School portal and website integration"
+                ]
+              }
+            ]
+          },
+          4: {
+            title: "Local Business Automation",
+            category: "CRM | Workflow Automation | Digital Solutions",
+            status: "Workflow Automation Solution",
+            statusClass: "completed",
+            tagline: "Customized digital workflows empowering local businesses to operate effortlessly.",
+            description: "Customized digital solutions designed to help local businesses manage operations, automate repetitive tasks, and elevate customer experiences.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "Custom responsive business website development",
+                  "Customer inquiry triage and management",
+                  "Automated multi-channel lead collection",
+                  "WhatsApp Business automated messaging",
+                  "Lightweight CRM integration",
+                  "Automated follow-up reminders and notifications",
+                  "Centralized customer database",
+                  "Automated administrative dashboards"
+                ]
+              }
+            ]
+          },
+          5: {
+            title: "SYRAXO",
+            category: "AI | EdTech | Product Design",
+            status: "AI EdTech Concept",
+            statusClass: "concept",
+            tagline: "Making education interactive, personalized, and accessible through Generative AI.",
+            description: "An AI-powered learning and mentorship platform designed to make education more interactive, engaging, and accessible for modern learners.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "AI-powered dynamic tutoring agent",
+                  "Gamified learning modules and progress quests",
+                  "One-click mentor discovery and booking",
+                  "Personalized adaptive learning pathways",
+                  "Automated mentor-student communication workflows"
+                ]
+              }
+            ]
+          },
+          6: {
+            title: "DEVmeda",
+            category: "Generative AI | Healthcare Technology",
+            status: "Healthcare AI Concept",
+            statusClass: "concept",
+            tagline: "Intelligent medical knowledge retrieval and clinical decision assistance.",
+            description: "An AI-powered medical information platform focused on intelligent information retrieval, document analysis, and healthcare assistance.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "Context-aware AI healthcare assistance",
+                  "Intelligent medical document and report analysis",
+                  "Semantically indexed medical knowledge base",
+                  "Rapid query resolution with cited clinical context",
+                  "High security and patient privacy principles"
+                ]
+              }
+            ]
+          },
+          7: {
+            title: "AERIS",
+            category: "Technology | Emergency Communication",
+            status: "Emergency Mesh Concept",
+            statusClass: "concept",
+            tagline: "Lifesaving communication channels when conventional networks fail.",
+            description: "An emergency communication concept designed to support critical communication and coordination when conventional network connectivity and cellular grids are unavailable.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "One-touch SOS transmission protocol",
+                  "Decentralized peer-to-peer mesh communication",
+                  "Encrypted local device storage",
+                  "Automatic opportunistic network synchronization",
+                  "Lightweight, resilient battery-efficient architecture"
+                ]
+              }
+            ]
+          },
+          8: {
+            title: "SANNII",
+            category: "AI Agents | Intelligent Automation",
+            status: "Autonomous Assistant Concept",
+            statusClass: "concept",
+            tagline: "Natural-language AI assistant executing intelligent multi-step workflows.",
+            description: "A personal AI assistant concept designed to understand natural-language commands and execute intelligent workflows across third-party tools.",
+            sections: [
+              {
+                title: "Key Features & Architecture",
+                items: [
+                  "Conversational natural-language intent parsing",
+                  "Voice-enabled interaction and synthesis",
+                  "Autonomous task decomposition and execution",
+                  "Multi-application workflow triggering via APIs",
+                  "Modular tool integration framework"
+                ]
+              }
+            ]
+          }
+        };
+
+        // Modal Open / Close Logic
+        function openProjectModal(id) {
+          const project = projectsData[id];
+          if (!project) return;
+
+          let html = `
+            <div class="mb-4">
+              <span class="status-pill ${project.statusClass} mb-3">${project.status}</span>
+              <p class="text-main-two-600 tw-text-sm fw-semibold text-uppercase mb-2">${project.category}</p>
+              <h2 class="text-white tw-text-3xl fw-bold mb-3">${project.title}</h2>
+              <p class="text-neutral-300 tw-text-lg fst-italic mb-4">"${project.tagline}"</p>
+              <p class="text-neutral-200 tw-text-base lh-lg">${project.description}</p>
+            </div>
+            <div class="row g-4 mt-2">
+          `;
+
+          project.sections.forEach(sec => {
+            html += `
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 bg-neutral-900 border border-neutral-800 h-100">
+                  <h4 class="text-white tw-text-lg fw-bold mb-3 border-bottom border-neutral-700 pb-2">${sec.title}</h4>
+                  <ul class="list-unstyled mb-0">
+            `;
+            sec.items.forEach(item => {
+              html += `
+                <li class="d-flex align-items-start tw-gap-2 mb-2 text-neutral-300 tw-text-sm">
+                  <i class="ph ph-check-circle text-main-two-600 mt-1"></i>
+                  <span>${item}</span>
+                </li>
+              `;
+            });
+            html += `
+                  </ul>
+                </div>
+              </div>
+            `;
+          });
+
+          html += `
+            </div>
+            <div class="mt-5 text-end border-top border-neutral-800 pt-3">
+              <a href="#contact" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-3 tw-px-8 d-inline-block rounded-3 hover-text-white" onclick="$('#projectModal').removeClass('active');">
+                Discuss This Project
+              </a>
+            </div>
+          `;
+
+          $('#modalContent').html(html);
+          $('#projectModal').addClass('active').attr('aria-hidden', 'false');
+          $('body').css('overflow', 'hidden');
+        }
+
+        function closeModal() {
+          $('#projectModal').removeClass('active').attr('aria-hidden', 'true');
+          $('body').css('overflow', '');
+        }
+
+        $(document).on('click', '.js-open-project', function(e) {
+          e.preventDefault();
+          const id = $(this).data('project-id');
+          openProjectModal(id);
+        });
+
+        $('#modalCloseBtn').on('click', closeModal);
+        $('#projectModal').on('click', function(e) {
+          if (e.target === this) closeModal();
+        });
+        $(document).on('keydown', function(e) {
+          if (e.key === 'Escape' && $('#projectModal').hasClass('active')) {
+            closeModal();
+          }
+        });
+
+        // Contact Form Handling (Validation, Loading, and Real Client-side State)
+        $('#contactForm').on('submit', function(e) {
+          e.preventDefault();
+          const form = this;
+          
+          if (!form.checkValidity()) {
+            e.stopPropagation();
+            $(form).addClass('was-validated');
+            return;
+          }
+
+          const name = $('#formName').val().trim();
+          const email = $('#formEmail').val().trim();
+          const subject = $('#formSubject').val().trim();
+          const message = $('#formMessage').val().trim();
+
+          const btn = $('#submitBtn');
+          const btnText = btn.find('.btn-text');
+          const spinner = btn.find('.spinner-border');
+          const alertBox = $('#formAlert');
+
+          btn.prop('disabled', true);
+          btnText.text('Preparing...');
+          spinner.removeClass('d-none');
+          alertBox.addClass('d-none');
+
+          setTimeout(() => {
+            btn.prop('disabled', false);
+            btnText.text('Submit Message');
+            spinner.addClass('d-none');
+
+            // Construct sanitized mailto fallback
+            const mailtoUrl = `mailto:sanskriti.jadhav@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
+            
+            alertBox.removeClass('d-none alert-danger').addClass('alert alert-success p-3 rounded-3')
+              .html(`<strong>Thank you, ${name}!</strong> Your message has been prepared. <a href="${mailtoUrl}" class="alert-link text-decoration-underline">Click here to send via your email client</a>, or connect directly with Sanskriti.`);
+
+            form.reset();
+            $(form).removeClass('was-validated');
+
+            // Toast feedback
+            showToast("Message prepared! Connect with Sanskriti directly.");
+          }, 600);
+        });
+
+        function showToast(msg) {
+          const toast = $('<div class="sj-toast"><i class="ph ph-check-circle text-main-two-600 tw-text-xl"></i><span>' + msg + '</span></div>');
+          $('#toast-container').append(toast);
+          setTimeout(() => {
+            toast.fadeOut(400, function() { $(this).remove(); });
+          }, 4500);
+        }
+
+      })(jQuery);
+    </script>
   </body>
 </html>

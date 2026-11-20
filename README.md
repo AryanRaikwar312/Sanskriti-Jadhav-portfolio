@@ -1,403 +1,81 @@
-# 🚀 Shan Portfolio
+# 🚀 Sanskriti Jadhav — Personal Portfolio
 
 <div align="center">
 
 ### Modern • Fast • Responsive • Creative
 
-A premium personal portfolio built with modern frontend technologies, smooth animations, and a clean UI to showcase projects, skills, and experience.
+**Digital Marketing Specialist | UI/UX Designer | AI & Automation Enthusiast**
 
-<p>
-  <a href="https://shan-portfolioo.netlify.app">
-    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-00C853?style=for-the-badge" />
-  </a>
-  <a href="https://github.com/shajith23/shan-portfolio">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" />
-  </a>
-  <img src="https://img.shields.io/github/stars/shajith23/shan-portfolio?style=for-the-badge" />
-  <img src="https://img.shields.io/github/forks/shajith23/shan-portfolio?style=for-the-badge" />
-  <img src="https://img.shields.io/github/license/shajith23/shan-portfolio?style=for-the-badge" />
-</p>
+*"Designing Digital Experiences. Building Intelligent Solutions."*
 
 </div>
 
 ---
 
-## ✨ Preview
+## ✨ Overview
 
-> A modern portfolio crafted to leave a strong first impression with smooth animations, responsive layouts, elegant typography, and a premium user experience.
+Premium personal portfolio website for **Sanskriti Jadhav**, showcasing digital marketing expertise, modern UI/UX design, web development, Generative AI & agentic workflow automation, and SEO/AEO search optimization.
 
-### 🔗 Live Website
+## 🛠️ Key Sections
 
-**https://shan-portfolioo.netlify.app**
-
-### 💻 GitHub Repository
-
-**https://github.com/shajith23/shan-portfolio**
-
----
-
-# 📖 Table of Contents
-
-- Overview
-- Features
-- Tech Stack
-- Folder Structure
-- Installation
-- Run Locally
-- Deployment
-- Customization
-- Performance
-- Browser Support
-- Future Improvements
-- Contributing
-- License
-- Contact
-
----
-
-# 🚀 Overview
-
-Shan Portfolio is a modern personal portfolio website built to showcase projects, skills, achievements, and services.
-
-The website focuses on:
-
-- Premium UI/UX
-- Fast performance
-- Responsive layouts
-- Smooth animations
-- Interactive components
-- SEO-friendly structure
-- Clean and maintainable code
+1. **Hero**: High-impact introduction with expressive typography, core focus pills, and quick action CTAs.
+2. **About Me**: Academic background in Computer Science & Engineering at Baderia Global Institute of Engineering and Management, Jabalpur, design philosophy, and technology vision.
+3. **Services & Expertise**:
+   - 01. AI & Automation (Generative AI, Agentic AI, n8n, WhatsApp, CRM Automation)
+   - 02. Web & Application Development (Responsive Websites, WordPress, Frontend, AI Web Apps)
+   - 03. UI/UX & Digital Design (Figma, Wireframing, Prototyping, Interface Design)
+   - 04. SEO & AI Search Optimization (Google SEO, AEO, GEO, LLMO Search Visibility)
+   - 05. Digital Marketing (Meta Ads, Content Strategy, Performance Growth)
+   - 06. Creative Content (Video Editing, Social Media Creatives, Visual Storytelling)
+4. **Selected Projects**:
+   - Corporate Digital Transformation & Automation (Completed Client Collaboration)
+   - Gym Management System (System Architecture Concept)
+   - School Management System (Academic Platform Concept)
+   - Local Business Automation (Digital Workflow Solution)
+   - SYRAXO (AI EdTech & Mentorship Platform Concept)
+   - DEVmeda (Healthcare AI Information Assistant Concept)
+   - AERIS (Emergency Mesh Communication Concept)
+   - SANNII (Intelligent AI Agent Assistant Concept)
+5. **Professional Experience**:
+   - Freelance Web Developer & UI/UX Designer (2023 – Present)
+   - Freelance Content & Growth Strategist (2023 – Present)
+   - Social Media & Digital Marketing (2022 – Present)
+   - Content Creator & Strategist — Cypher / P2P Foundation (2024 – Present)
+   - UI/UX Design Intern — Emote (Remote)
+6. **Professional Highlights**: Driven by curiosity and focused on impact across design, code, and AI.
+7. **Technology & Tools**: Showcase of AI, Design, Marketing, and Productivity tools.
+8. **Contact & Footer**: Validated interactive contact form, direct communication links, location (Jabalpur, Madhya Pradesh, India), and social profiles.
 
 ---
 
-# ✨ Features
+## ⚡ Tech Stack & Libraries
 
-## 🎯 Modern UI
-
-- Premium design
-- Dark aesthetic
-- Mobile-first layout
-- Responsive navigation
-- Interactive sections
-
----
-
-## ⚡ Performance
-
-- Lightweight
-- Optimized assets
-- Fast loading
-- Smooth scrolling
-- Lazy loading ready
+- **HTML5 / CSS3 / JavaScript**
+- **Bootstrap 5 & Flexbox Grid**
+- **GSAP 3** (ScrollSmoother, ScrollTrigger, SplitText, ScrollToPlugin)
+- **Phosphor Icons**
+- **AOS (Animate on Scroll)**
+- **PureCounter**
+- **Swiper Bundle**
 
 ---
 
-## 🎨 Animations
+## 🚀 Running Locally
 
-- GSAP animations
-- Scroll animations
-- Hover effects
-- Counter animations
-- Smooth transitions
-
----
-
-## 📱 Fully Responsive
-
-Works perfectly on:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
----
-
-## 📂 Sections
-
-- Hero
-- About
-- Skills
-- Experience
-- Services
-- Portfolio
-- Testimonials
-- Contact
-- Footer
-
----
-
-# 🛠 Tech Stack
-
-| Technology | Purpose |
-|------------|----------|
-| HTML5 | Structure |
-| CSS3 | Styling |
-| Bootstrap 5 | Responsive Grid |
-| JavaScript | Interactivity |
-| jQuery | Plugins |
-| GSAP | Animations |
-| Swiper.js | Sliders |
-| AOS | Scroll Animations |
-| Magnific Popup | Image & Video Popups |
-| PureCounter | Animated Counters |
-
----
-
-# 📁 Folder Structure
-
-```text
-shan-portfolio/
-│
-├── index.html
-├── README.md
-│
-├── assets/
-│
-├── css/
-├── js/
-├── images/
-├── fonts/
-└── icons/
-```
-
----
-
-# 🚀 Installation
-
-Clone the repository
+You can serve the static portfolio with any local HTTP server:
 
 ```bash
-git clone https://github.com/shajith23/shan-portfolio.git
+# Python 3
+python -m http.server 3000
+
+# or with Node.js
+npx serve
 ```
 
-Open project
-
-```bash
-cd shan-portfolio
-```
+Then navigate to `http://localhost:3000` in your web browser.
 
 ---
 
-# ▶ Run Locally
+## 📄 License
 
-### Method 1
-
-Open
-
-```
-index.html
-```
-
----
-
-### Method 2
-
-Using VS Code
-
-Install
-
-```
-Live Server
-```
-
-Right Click
-
-```
-Open with Live Server
-```
-
----
-
-### Method 3
-
-Python
-
-```bash
-python3 -m http.server 8000
-```
-
-Visit
-
-```
-http://localhost:8000
-```
-
----
-
-# 🌐 Deployment
-
-## GitHub Pages
-
-```bash
-git init
-
-git add .
-
-git commit -m "Initial Commit"
-
-git branch -M main
-
-git remote add origin https://github.com/shajith23/shan-portfolio.git
-
-git push -u origin main
-```
-
-Enable
-
-```
-Settings
-
-↓
-
-Pages
-
-↓
-
-Deploy from main branch
-```
-
----
-
-## Netlify
-
-Drag & Drop
-
-OR
-
-Connect GitHub Repository
-
----
-
-## Vercel
-
-Import GitHub Repository
-
-Deploy
-
-Done ✅
-
----
-
-# 🎨 Customization
-
-Update
-
-- Name
-- Logo
-- Images
-- Portfolio Projects
-- Contact Information
-- Resume
-- Social Links
-- Theme Colors
-
-Everything can be customized inside
-
-```
-index.html
-```
-
-and
-
-```
-assets/
-```
-
----
-
-# 📈 Performance Goals
-
-✅ Responsive
-
-✅ SEO Friendly
-
-✅ Accessible
-
-✅ Optimized Assets
-
-✅ Smooth Animation
-
-✅ Cross Browser Compatible
-
----
-
-# 🌍 Browser Support
-
-- Chrome
-- Edge
-- Firefox
-- Safari
-- Brave
-- Opera
-
----
-
-# 🚀 Future Improvements
-
-- Blog Integration
-- CMS Support
-- Dark / Light Toggle
-- Multi-language
-- Analytics Dashboard
-- Contact API
-- Admin Panel
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork Repository
-
-2. Create Feature Branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit
-
-```bash
-git commit -m "Added Feature"
-```
-
-4. Push
-
-```bash
-git push origin feature-name
-```
-
-5. Open Pull Request
-
----
-
-# 📄 License
-
-This project is available for personal and commercial portfolio use.
-
----
-
-# 👨‍💻 Developer
-
-**Shajith (Shan)**
-
-### Portfolio
-
-https://shan-portfolioo.netlify.app
-
-### GitHub
-
-https://github.com/shajith23
-
----
-
-<div align="center">
-
-### ⭐ If you like this project, don't forget to Star the Repository!
-
-Made with ❤️ by **Shajith**
-
-</div>
+&copy; 2026 Sanskriti Jadhav. All rights reserved.

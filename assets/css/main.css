@@ -10071,3 +10071,232 @@ body.tw-magic-cursor #magic-cursor {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* ==========================================================================
+   Sanskriti Jadhav Personal Portfolio Custom Extensions
+   ========================================================================== */
+
+/* Project Details Modal */
+.sj-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 10, 15, 0.88);
+  backdrop-filter: blur(12px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+  padding: 20px;
+}
+.sj-modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sj-modal-dialog {
+  background: #11131a;
+  border: 1px solid rgba(255, 81, 1, 0.35);
+  border-radius: 20px;
+  max-width: 860px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 81, 1, 0.15);
+  transform: translateY(30px) scale(0.97);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  padding: 40px 45px;
+}
+.sj-modal-backdrop.active .sj-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+.sj-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 20px;
+}
+.sj-modal-close:hover {
+  background: var(--main-two-600);
+  border-color: var(--main-two-600);
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* Highlights Grid */
+.highlight-card {
+  background: rgba(20, 24, 34, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.35s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--main-two-600);
+  transition: height 0.35s ease;
+}
+.highlight-card:hover {
+  background: rgba(28, 33, 48, 0.85);
+  border-color: rgba(255, 81, 1, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+.highlight-card:hover::before {
+  height: 100%;
+}
+.highlight-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: rgba(255, 81, 1, 0.12);
+  border: 1px solid rgba(255, 81, 1, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-two-600);
+  font-size: 26px;
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+}
+.highlight-card:hover .highlight-icon {
+  background: var(--main-two-600);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+/* Tools Category Card */
+.tool-category-box {
+  background: rgba(18, 22, 32, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  padding: 32px 30px;
+  height: 100%;
+  transition: all 0.35s ease;
+}
+.tool-category-box:hover {
+  border-color: rgba(255, 81, 1, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  background: rgba(24, 29, 44, 0.85);
+}
+.tool-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f0f2f8;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+.tool-tag:hover {
+  background: var(--main-two-600);
+  border-color: var(--main-two-600);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.tool-tag i {
+  color: var(--main-two-600);
+  font-size: 17px;
+  transition: color 0.25s ease;
+}
+.tool-tag:hover i {
+  color: #fff;
+}
+
+/* Experience Responsibilities */
+.experience-roles-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.experience-roles-list li {
+  font-size: 13.5px;
+  color: #b5bdd0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.experience-roles-list li:hover {
+  border-color: var(--main-two-600);
+  color: #fff;
+}
+
+/* Status Badge */
+.status-pill {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.status-pill.completed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+.status-pill.concept {
+  background: rgba(147, 51, 234, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(147, 51, 234, 0.35);
+}
+
+/* Toast Container & Notification */
+.sj-toast {
+  padding: 14px 22px;
+  border-radius: 10px;
+  background: #181c26;
+  border: 1px solid rgba(255, 81, 1, 0.4);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  animation: slideInToast 0.3s ease forwards;
+}
+@keyframes slideInToast {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
