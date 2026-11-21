@@ -24,11 +24,21 @@
 }
 
 /* --------------------------------------------------------------------------
-   DESKTOP SAFEGUARDS (>= 1200px)
-   Keep desktop hover-reveal images, row composition & animations completely intact
+   GLOBAL REMOVAL OF EXPERIENCE HOVER IMAGES (ALL DEVICES)
+   Floating hover-preview and cursor-following images are permanently disabled
    -------------------------------------------------------------------------- */
-@media screen and (min-width: 1200px) {
-  /* No overrides on desktop */
+#experience .hover__reveal-bg,
+#experience .hover__reveal-item .hover__reveal-bg,
+.feature-three-area .hover__reveal-bg {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  position: static !important;
+  transform: none !important;
 }
 
 /* --------------------------------------------------------------------------
