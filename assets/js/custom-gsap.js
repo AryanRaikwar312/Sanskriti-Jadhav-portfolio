@@ -580,7 +580,9 @@
   }
   hoverItem.forEach((item) => {
     item.addEventListener("mousemove", (e) => {
-      moveImage(e, item, 1);
+      if (window.innerWidth >= 1200) {
+        moveImage(e, item, 1);
+      }
     });
   });
 
