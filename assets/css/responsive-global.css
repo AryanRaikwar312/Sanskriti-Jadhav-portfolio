@@ -68,6 +68,21 @@ h2.tw-text-15 {
 }
 
 /* Header Navigation Links Visibility */
+.header-three-logo {
+  background: #f8fafc !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+  border-radius: 10px !important;
+  padding: 10px 16px !important;
+}
+
+.header-three-logo img {
+  display: block !important;
+  max-height: 42px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
 .header-three .tw-main-menu-content ul li a,
 .header.header-three .main-menu a,
 .main-menu nav ul li a {
