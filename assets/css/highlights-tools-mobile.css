@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Highlights & Tools Sections Mobile & Tablet Responsiveness
+   STRICT SCOPE: Only applies to #highlights / #tools / .brand-three-*
+   Preserves 100% of desktop layout for screen widths >= 1200px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLET & MOBILE HIGHLIGHTS & TOOLS OPTIMIZATION (< 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  #highlights {
+    padding-block: 80px 60px !important;
+    overflow: hidden !important;
+  }
+
+  #highlights [data-aos],
+  #tools [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+
+  #highlights h2.tw-text-15,
+  #tools h2.brand-three-title {
+    font-size: clamp(28px, 5.5vw, 44px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Highlight Cards */
+  .highlight-card {
+    padding: 24px 20px !important;
+    border-radius: 16px !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .highlight-card h3 {
+    font-size: clamp(19px, 3.8vw, 22px) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .highlight-card p {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    color: #94a3b8 !important;
+  }
+
+  /* Tools / Tech Stack Section */
+  #tools {
+    padding-block: 70px 60px !important;
+    overflow: hidden !important;
+  }
+
+  .tool-category-box {
+    padding: 24px 20px !important;
+    border-radius: 16px !important;
+    background: #0d1216 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .tool-category-box h3 {
+    font-size: clamp(17px, 3.5vw, 20px) !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .tool-tag {
+    font-size: 13px !important;
+    padding: 7px 12px !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #cbd5e1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #highlights {
+    padding-block: 70px 50px !important;
+  }
+
+  #tools {
+    padding-block: 60px 50px !important;
+  }
+
+  .highlight-card,
+  .tool-category-box {
+    padding: 20px 16px !important;
+    border-radius: 14px !important;
+  }
+}

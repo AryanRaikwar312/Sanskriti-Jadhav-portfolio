@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Global Responsive Optimization & Fluid Typography System
+   Ensures seamless mobile viewport behavior & legible clamp-based typography
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL OVERFLOW SAFEGUARD & RESET
+   -------------------------------------------------------------------------- */
+html, body {
+  overflow-x: clip !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#smooth-wrapper, #smooth-content {
+  overflow-x: clip !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Marquee Overflow Safeguard */
+.marquee,
+.marquee_left,
+.marquee__inner,
+.marquee-item {
+  max-width: 100vw !important;
+  overflow: hidden !important;
+}
+
+/* Container responsive padding */
+@media screen and (max-width: 767px) {
+  .container,
+  .tw-container-1800-px {
+    padding-inline: 16px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. FLUID TYPOGRAPHY SYSTEM (clamp-based)
+   Targets:
+   Hero heading: clamp(38px, 6vw, 88px)
+   Section headings: clamp(32px, 4vw, 60px)
+   Subheadings: clamp(21px, 2.5vw, 32px)
+   Paragraphs: clamp(16px, 1.2vw, 20px)
+   Small labels: clamp(14px, 1vw, 16px)
+   -------------------------------------------------------------------------- */
+h2.tw-text-15 {
+  font-size: clamp(32px, 4.2vw, 58px) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.text-heading {
+  color: #0c1017;
+}
+
+p.tw-text-xl {
+  font-size: clamp(16px, 1.2vw, 20px) !important;
+  line-height: 1.7 !important;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px !important;
+  font-size: clamp(14px, 1vw, 16px) !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. MOBILE OFFCANVAS & HEADER SAFEGUARD
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .side-overlay.show {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
+  .header-three {
+    padding-block: 14px !important;
+  }
+}

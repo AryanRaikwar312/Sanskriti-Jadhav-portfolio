@@ -1,0 +1,128 @@
+/* ==========================================================================
+   About Section Responsiveness & Readability Optimization
+   STRICT SCOPE: Only applies to #about / .about-three-*
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CRITICAL TEXT COLOR FIX (DESKTOP & MOBILE)
+   The about section has a white background (#ffffff).
+   The paragraph text had text-neutral-100 (#f3f4f6), making it invisible white-on-white.
+   Force high-contrast dark text for optimal readability.
+   -------------------------------------------------------------------------- */
+#about.about-three-area {
+  background: #ffffff !important;
+}
+
+#about .about-three-right p,
+#about .about-three-right p.text-neutral-100 {
+  color: #262e3d !important;
+  font-size: clamp(16px, 1.2vw, 19.5px) !important;
+  line-height: 1.75 !important;
+  margin-bottom: 20px !important;
+}
+
+/* Retain white/light text inside the dark education card */
+#about .about-three-right .bg-neutral-900 h4 {
+  color: #ffffff !important;
+}
+
+#about .about-three-right .bg-neutral-900 p {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#about .about-three-right .bg-neutral-900 .text-white-50 {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* --------------------------------------------------------------------------
+   TABLET & MOBILE ABOUT OPTIMIZATION (< 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  #about.about-three-area {
+    padding-block: 80px 60px !important;
+    overflow: hidden !important;
+  }
+
+  /* Force immediate visibility for animated elements on mobile */
+  #about [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+
+  #about .about-three-title {
+    font-size: clamp(30px, 5.5vw, 48px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 24px !important;
+  }
+
+  .about-three-thumb {
+    max-width: min(90vw, 440px) !important;
+    margin: 0 auto 36px auto !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+  }
+
+  .about-three-thumb img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 18px !important;
+  }
+
+  .about-three-right {
+    width: 100% !important;
+    max-width: 650px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Education Card */
+  #about .bg-neutral-900 {
+    padding: 22px 18px !important;
+    border-radius: 16px !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* Let's Talk CTA button circle */
+  .about-three-counter {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 24px !important;
+  }
+
+  .about-three-counter .tw-btn-circle {
+    width: clamp(130px, 32vw, 160px) !important;
+    height: clamp(130px, 32vw, 160px) !important;
+  }
+
+  /* Key Pillars Cards */
+  .about-three-wrap-shape {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 650px !important;
+    margin: 36px auto 0 auto !important;
+  }
+
+  .about-three-wrap-shape .banner-three-counter-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 22px 20px !important;
+    border-radius: 16px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  .about-three-shape {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+  .about-three-wrap-shape {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}

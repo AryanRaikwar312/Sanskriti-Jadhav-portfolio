@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Philosophy, Contact & Footer Mobile & Tablet Responsiveness
+   STRICT SCOPE: Only applies to .testimonial-three-*, #contact / .footer-three-*, .sj-modal-*
+   Preserves 100% of desktop layout for screen widths >= 1200px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   PHILOSOPHY STATEMENT (TESTIMONIAL) RESPONSIVENESS
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  .testimonial-three-area {
+    padding-block: 70px 60px !important;
+    overflow: hidden !important;
+  }
+
+  .testimonial-three-area [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+
+  .testimonial-three-area .tw-p-12 {
+    padding: 36px 24px !important;
+    border-radius: 20px !important;
+  }
+
+  .testimonial-three-area h2.testimonial-three-title {
+    font-size: clamp(24px, 4.8vw, 36px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .testimonial-three-area p.tw-text-2xl {
+    font-size: clamp(16px, 2.8vw, 20px) !important;
+    line-height: 1.7 !important;
+    color: #cbd5e1 !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .testimonial-three-area .tw-p-12 {
+    padding: 28px 16px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   CONTACT & FOOTER RESPONSIVENESS
+   -------------------------------------------------------------------------- */
+#contact.footer-three-area {
+  background: #05070c !important;
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 1199px) {
+  #contact.footer-three-area {
+    padding-block-start: 80px !important;
+  }
+
+  #contact [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+
+  #contact h2.tw-text-15 {
+    font-size: clamp(28px, 5.5vw, 44px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer-three-top-left {
+    margin-inline-end: 0 !important;
+    margin-bottom: 40px !important;
+  }
+
+  .footer-three-top-left p {
+    font-size: clamp(15px, 2.8vw, 18px) !important;
+    line-height: 1.7 !important;
+    color: #cbd5e1 !important;
+  }
+
+  /* Contact Form Input Ergonomics */
+  .footer-three-form input,
+  .footer-three-form textarea {
+    font-size: 16px !important; /* Prevents iOS auto-zoom on input focus */
+    padding-inline: 18px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 12px !important;
+  }
+
+  .footer-three-form textarea {
+    height: 140px !important;
+  }
+
+  /* Middle bar: Quick links & Back to top */
+  .footer-three-border {
+    padding-inline: 12px !important;
+  }
+
+  .footer-three-middile {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 28px !important;
+  }
+
+  .footer-three-middile ul {
+    justify-content: center !important;
+  }
+
+  .footer-three-middile .text-lg-end {
+    text-align: center !important;
+  }
+
+  .footer-three-back-to-top {
+    width: 64px !important;
+    height: 64px !important;
+    font-size: 22px !important;
+  }
+}
+
+/* Giant SANSKRITI Watermark Containment */
+.footer-three-bottom {
+  max-width: 100vw !important;
+  overflow: hidden !important;
+  padding-block: 20px !important;
+}
+
+.footer-three-bottom-title {
+  font-size: clamp(40px, 12vw, 160px) !important;
+  max-width: 100vw !important;
+  overflow: hidden !important;
+  word-break: break-all !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1 !important;
+}
+
+/* --------------------------------------------------------------------------
+   PROJECT DETAIL MODAL MOBILE OPTIMIZATION
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .sj-modal-backdrop {
+    padding: 16px !important;
+  }
+
+  .sj-modal-dialog {
+    padding: 28px 18px !important;
+    border-radius: 16px !important;
+    max-height: 86vh !important;
+    width: 100% !important;
+  }
+
+  .sj-modal-close {
+    top: 12px !important;
+    right: 12px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 20px !important;
+  }
+
+  .sj-modal-dialog h2 {
+    font-size: 22px !important;
+  }
+
+  .sj-modal-dialog p {
+    font-size: 15px !important;
+  }
+}

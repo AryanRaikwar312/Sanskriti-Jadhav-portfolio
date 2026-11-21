@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Services & Expertise Section Mobile & Tablet Responsiveness
+   STRICT SCOPE: Only applies to #expertise / .service-three-*
+   Preserves 100% of desktop layout for screen widths >= 1200px
+   ========================================================================== */
+
+/* Badge pill styling (clean, premium look on all viewports) */
+#expertise .badge-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 8px 16px !important;
+  border-radius: 9999px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  color: #f1f5f9 !important;
+  font-size: clamp(13px, 1.1vw, 15px) !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  transition: all 0.25s ease !important;
+}
+
+#expertise .badge-item:hover {
+  background: var(--main-two-600) !important;
+  border-color: var(--main-two-600) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   TABLET & MOBILE SERVICES OPTIMIZATION (< 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  #expertise.service-three-area {
+    padding-block: 80px 60px !important;
+    overflow: hidden !important;
+  }
+
+  /* Force immediate visibility for animated elements on mobile */
+  #expertise [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+
+  #expertise h2.tw-text-15 {
+    font-size: clamp(28px, 5.5vw, 44px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* Modern Card Layout instead of rigid 200px pill */
+  #expertise .service-three-single {
+    border-radius: 20px !important;
+    padding: 24px 20px !important;
+    margin-block-end: 24px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    box-sizing: border-box !important;
+  }
+
+  #expertise .service-three-item {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  #expertise .service-three-content {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  #expertise .service-three-number {
+    width: auto !important;
+    font-size: clamp(20px, 4vw, 24px) !important;
+    font-weight: 700 !important;
+    color: var(--main-two-600) !important;
+    margin-top: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  #expertise .service-three-title {
+    font-size: clamp(22px, 4.5vw, 32px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 14px !important;
+    letter-spacing: -0.01em !important;
+    color: #ffffff !important;
+  }
+
+  #expertise .portfolio-list ul {
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  #expertise .service-three-thumb {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 8px !important;
+  }
+
+  #expertise .service-three-thumb img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #expertise.service-three-area {
+    padding-block: 70px 50px !important;
+  }
+
+  #expertise .service-three-single {
+    padding: 20px 16px !important;
+    border-radius: 16px !important;
+    margin-block-end: 18px !important;
+  }
+
+  #expertise .badge-item {
+    font-size: 13px !important;
+    padding: 6px 12px !important;
+  }
+}
