@@ -170,3 +170,23 @@
     font-size: 15px !important;
   }
 }
+
+/* ========================================
+   EMAIL CTA BUTTON — Contact Section
+   ======================================== */
+.email-cta-btn {
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease !important;
+  letter-spacing: 0.5px !important;
+}
+.email-cta-btn:hover {
+  background: #d94400 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255, 81, 1, 0.35) !important;
+  color: #ffffff !important;
+}
+.contact-email-copy-box {
+  transition: border-color 0.2s ease !important;
+}
+.contact-email-card {
+  background: rgba(255,255,255,0.03) !important;
+}
