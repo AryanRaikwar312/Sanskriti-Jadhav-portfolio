@@ -69,6 +69,8 @@
   <link rel="stylesheet" href="assets/css/aos.css" />
   <!-- Main css -->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Hero Section Mobile Responsiveness Only -->
+  <link rel="stylesheet" href="assets/css/hero-mobile.css" />
 </head>
 
 <body class="tw-magic-cursor">
@@ -296,13 +298,14 @@
           <div class="row">
             <div class="col-xl-12">
               <div class="banner-three-wrapper position-relative z-1">
-                <!-- Sanskriti's Portrait Placeholder Slot -->
-                <div class="banner-three-man position-absolute start-50 translate-middle-x">
+                <!-- Sanskriti's Portrait Desktop Placement (Hidden on mobile) -->
+                <div class="banner-three-man position-absolute start-50 translate-middle-x d-none d-xl-block">
                   <img src="assets/images/shapes/banner-three-man.png" alt="Sanskriti Jadhav Portrait" />
                 </div>
-                <!-- Hero Backdrop Expressive Typography -->
+                <!-- Hero Expressive Heading -->
                 <h1 class="banner-three-title text-black tw-mb-30">
-                  SANSKRITI
+                  <span class="d-none d-xl-inline">SANSKRITI</span>
+                  <span class="d-xl-none">SANSKRITI JADHAV</span>
                 </h1>
                 <div class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1">
                   <!-- Left Hero Card -->
@@ -345,19 +348,25 @@
                     <h3 class="banner-three-center-title tw-text-120">
                       Designing Digital Experiences. Building Intelligent Solutions.
                     </h3>
-                    <p class="tw-text-xl text-white-50 tw-mb-8 max-w-700-px mx-auto">
+                    
+                    <!-- Dedicated Mobile Photograph (In-flow on mobile < 1200px) -->
+                    <div class="hero-mobile-photo d-xl-none">
+                      <img src="assets/images/shapes/banner-three-man.png" alt="Sanskriti Jadhav Portrait" />
+                    </div>
+
+                    <p class="tw-text-xl text-white-50 tw-mb-8 max-w-700-px mx-auto hero-intro-text">
                       I'm a digital creative and technology enthusiast passionate about AI, automation, user experience,
                       web development, and digital marketing. I combine creativity with technology to develop solutions
                       that simplify processes, improve user experiences, and help businesses grow.
                     </p>
                     <div
                       class="banner-three-button d-flex align-items-center justify-content-center tw-gap-4 flex-wrap">
-                      <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                      <a class="tw-hover-btn hero-cta-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
                         href="#projects">
                         Explore My Work
                         <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
                       </a>
-                      <a class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                      <a class="tw-hover-btn hero-cta-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
                         href="#contact">
                         Let's Connect
                         <span class="tw-hover-btn-circle-dot bg-black"></span>
