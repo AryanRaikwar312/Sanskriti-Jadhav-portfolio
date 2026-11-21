@@ -5,6 +5,21 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   UNIVERSAL HERO INTRODUCTION TEXT VISIBILITY (DESKTOP, TABLET & MOBILE)
+   Ensure paragraph text has strong contrast (#262e3d) against the light hero card (#ffffff)
+   -------------------------------------------------------------------------- */
+#home .hero-intro-text,
+#home .banner-three-center p,
+.banner-three-center p.hero-intro-text {
+  color: #262e3d !important;
+  font-size: clamp(16px, 1.25vw, 19px) !important;
+  line-height: 1.75 !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* --------------------------------------------------------------------------
    DESKTOP SAFEGUARDS (>= 1200px)
    -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
