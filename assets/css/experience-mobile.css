@@ -5,6 +5,25 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   STATIONARY TEXT ENFORCEMENT (DESKTOP & MOBILE)
+   Ensure all headings, titles, dates, descriptions and skill tags in #experience
+   remain completely stationary with ZERO cursor-following or magnetic shift
+   -------------------------------------------------------------------------- */
+#experience .feature-three-item,
+#experience .feature-three-left,
+#experience .feature-three-left > div,
+#experience .feature-three-left span,
+#experience .feature-three-text,
+#experience .experience-roles-list,
+#experience .experience-roles-list li,
+#experience h2,
+#experience p {
+  transform: none !important;
+  -webkit-transform: none !important;
+  will-change: auto !important;
+}
+
+/* --------------------------------------------------------------------------
    DESKTOP SAFEGUARDS (>= 1200px)
    Keep desktop hover-reveal images, row composition & animations completely intact
    -------------------------------------------------------------------------- */

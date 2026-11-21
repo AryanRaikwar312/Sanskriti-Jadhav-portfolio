@@ -568,20 +568,21 @@
   });
 
   ///////////////////////
-  // 09. Hover Reveal
+  // 09. Hover Reveal (Target only .hover__reveal-bg image, never text or skill tags)
   const hoverItem = document.querySelectorAll(".hover__reveal-item");
-  function moveImage(e, item, index) {
-    const rect = item.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    if (item.children[index]) {
-      item.children[index].style.transform = `translate(${x}px, ${y}px)`;
+  function moveImage(e, item) {
+    const bg = item.querySelector(".hover__reveal-bg");
+    if (bg) {
+      const rect = item.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      bg.style.transform = `translate(${x}px, ${y}px)`;
     }
   }
   hoverItem.forEach((item) => {
     item.addEventListener("mousemove", (e) => {
       if (window.innerWidth >= 1200) {
-        moveImage(e, item, 1);
+        moveImage(e, item);
       }
     });
   });
