@@ -67,6 +67,21 @@ h2.tw-text-15 {
   color: #0c1017;
 }
 
+/* Header Navigation Links Visibility */
+.header-three .tw-main-menu-content ul li a,
+.header.header-three .main-menu a,
+.main-menu nav ul li a {
+  color: #0c1017 !important;
+  font-weight: 500 !important;
+  transition: color 0.25s ease !important;
+}
+
+.header-three .tw-main-menu-content ul li a:hover,
+.header.header-three .main-menu a:hover,
+.main-menu nav ul li a:hover {
+  color: var(--main-two-600) !important;
+}
+
 p.tw-text-xl {
   font-size: clamp(16px, 1.2vw, 20px) !important;
   line-height: 1.7 !important;
